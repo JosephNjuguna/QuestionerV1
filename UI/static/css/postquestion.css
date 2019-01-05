@@ -84,6 +84,8 @@
 }
 .post-question .post-body .post-footer{
     width: auto;
-    height: 50px;
-    background-color:rgba(0,0,0,0.5) 
+    background-color:rgba(0,0,0,0.5); 
+    border-style: groove;
+    border-radius: 4px;
+    border-width: 1px;
 }
