@@ -1,0 +1,119 @@
+.signup-body{
+    background-color: blue;
+    margin: 0;
+    color:white;
+    font-family: sans-serif;
+}
+.signup-body a{
+    color: white;
+    text-decoration: none;
+}
+.signup-body .signup-nav{
+    padding: 10px;
+    height: 50px;
+    background-color: rgba(0,0,0,0.5);
+}
+.signup-body .signup-nav .navbar-items .nav-bar{
+    padding: 8px;
+    display: inline;
+}
+.signup-body .signup-nav .navbar-items .nav-bar .nav-left {
+    float: left;
+    padding: 10px;
+}
+.signup-body .signup-nav .navbar-items .nav-bar .nav-right li{
+    display: inline-block;
+    float: right;
+    border-style: groove;
+    border-radius: 4px;
+    border-width: 1px;
+    padding: 6px;
+    margin-right: 7px;
+    color: white;
+}
+.signup-body .signup-nav .navbar-items .nav-bar .nav-right li a{
+    float: right;
+    color: white;
+    margin-right:2px; 
+}
+.signup-body .signup-input{
+    width: auto;
+    margin:3%;
+}
+.signup-body .signup-input .input-body{
+    padding: 15px;
+    display: inline-block;
+}
+.signup-body .signup-input .input-body form{
+    border: none;
+    border-color: white;
+    border-style: groove;
+    border-width: 1px;
+    border-radius: 16px;
+    padding: 20px;
+
+}
+.signup-body .signup-input .input-body .input{
+    display: inline-block;
+    width: 70%;
+    height: 35px;
+    padding: 6px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin: 0px;
+    border-radius: 4px;
+    border-style: groove;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.signup-body .signup-input .input-body .submit-signup{
+    border-radius: 10px;
+    background-color: rgb(6, 6, 94);
+    margin-top: 2%;
+    display: inline-block;
+    border-style: groove;
+    width: 40%;
+    height: 30px;
+    padding: 4px;
+    color: white;
+    text-align: center;
+}
+.signup-body .mainpage-footer{
+    padding: 4px;
+    width: auto;
+    margin-top: 2%;
+    text-align: center; 
+    background-color: rgba(0,0,0,0.5);
+}
+.signup-body .mainpage-footer .questioner-info{
+    margin:2px;
+    display: inline-block;
+}
+.signup-body .mainpage-footer .questioner-info .questioner-contact{
+    width: 32%;
+    margin: 1px;
+    height: 50%;
+    padding: 1px;
+    float: left;
+    border-color: white;
+    border-style: groove;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 1px;
+    border-bottom-width: 0px;
+}
+.signup-body .mainpage-footer .questioner-info .footer-copyright{
+    width: 100%;
+    float: left;
+    margin: 2px;
+    border-color: white;
+    border-style: groove;
+    border-radius: 4px;
+    border-width: 1px;
+}
+
