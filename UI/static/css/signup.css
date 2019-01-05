@@ -61,13 +61,13 @@
     color: white;
     text-align: center;
     font-size: 16px;
-    margin: 0px;
+    margin: 4px;
     border-radius: 4px;
     border-style: groove;
     border-top-width: 0px;
     border-left-width: 0px;
     border-right-width: 0px;
-    border-bottom-width: 1px;
+    border-bottom-width: 3px;
     background-color: rgba(0,0,0,0.5);
 }
 
