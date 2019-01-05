@@ -1,0 +1,155 @@
+.dashboard-body{
+    background-color: blue;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.dashboard-body a{
+    color: white;
+    text-decoration: none;
+}
+.dashboard-body .dashboard-nav{
+    padding: 10px;
+    height: 50px;
+    background-color: rgba(0,0,0,0.5);
+}
+.dashboard-body .dashboard-nav .navbar-items .nav-bar{
+    padding: 8px;
+    display: inline;
+}
+.dashboard-body .dashboard-nav .navbar-items .nav-bar .nav-left {
+    float: left;
+    padding: 10px;
+}
+.dashboard-body .dashboard-nav .navbar-items .nav-bar .nav-right .right {
+    display: inline-block;
+    float: right;
+    padding: 4px;
+    margin-right: 7px;
+    color: white;
+}
+/*repeated*/
+.dashboard-body .dashboard-nav .navbar-items .nav-bar .nav-right input{
+    height: 20px;
+    width: 30%;
+    padding: 10px;
+    font-size: 16px;
+    float: left;
+    margin-right: 7px;
+    color: white;
+    display: inline-block;
+    border-style: groove;
+    border-radius: 6px;
+    border-width: 1px;
+    background-color: rgba(0,0,0,0.5);
+}
+/*repeated*/
+.dashboard-body .dashboard-nav .navbar-items .nav-bar .nav-right button{
+    height: auto;
+    width: auto;
+    padding: 6px;
+    font-size: 16px;
+    float: right;
+    margin-right: 7px;
+    color: white;
+    display: inline-block;
+    border-style: groove;
+    border-radius: 6px;
+    border-width: 1px;
+    background-color: rgba(0,0,0,0.5);
+}
+.dashboard-body .dashboard-nav .navbar-items .nav-bar .nav-right li {
+    float: right;
+    color: white;
+    margin-right:2px;
+    border-style: groove;
+    border-radius: 6px;
+    border-width: 1px; 
+}
+.dashboard-body .dashboard-meetups{
+    margin: 0;
+    padding: 14px;
+    height:auto;
+}
+.dashboard-body .dashboard-meetups .meetup-view{
+    height: 370px;
+    width: 300px;
+    padding: 6px;
+    float: left;
+    margin-left:8%;
+    margin-top:2%;
+}
+.dashboard-body .dashboard-meetups .meetup-view .meeting-details{
+    margin-top:2%;
+    border-style: groove;
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: white;
+}
+.dashboard-body .dashboard-meetups .meetup-view img{
+    height: 200px;
+    width: 300px;
+    margin: 0;
+    border-style: groove;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+}
+.dashboard-body .dashboard-meetups .meetup-view .meetup-info{
+    margin: 0;
+    padding: 4px;
+    border-style: groove;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+}
+.dashboard-body .dashboard-meetups .meetup-view button{
+    border-radius: 5px;
+    background-color: rgb(6, 6, 94);
+    float: right;
+    margin: 4px;
+    display: inline-block;
+    border-style: groove;
+    width: auto;
+    height: 40px;
+    padding: 4px;
+    color: white;
+    text-align: center;
+}
+.dashboard-body .dashboard-footer{
+    padding: 4px;
+    width: auto;
+    float: right;
+    margin-top: 2%;
+    text-align: center; 
+    background-color: rgba(0,0,0,0.5);
+}
+.dashboard-body .dashboard-footer .questioner-info{
+    margin:2px;
+    display: inline-block;
+}
+.dashboard-body .dashboard-footer .questioner-info .questioner-contact{
+    width: 32%;
+    margin: 1px;
+    height: 50%;
+    padding: 1px;
+    float: left;
+    border-color: white;
+    border-style: groove;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 1px;
+    border-bottom-width: 0px;
+}
+.dashboard-body .dashboard-footer .questioner-info .footer-copyright{
+    width: 100%;
+    float: left;
+    margin: 2px;
+    border-color: white;
+    border-style: groove;
+    border-radius: 4px;
+    border-width: 1px;
+}
