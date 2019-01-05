@@ -1,0 +1,89 @@
+.post-question{
+    background-color: blue;
+    padding:0;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.post-question button{
+    width: auto;
+    height: auto;
+    height: auto;
+    width:auto;
+    padding: 10px;
+    border-style: groove;
+    border-radius: 4px;
+    border-width: 2px;
+    background-color: rgba(0,0,0,0.5);
+    color:white;
+}
+.post-question textarea{
+    width: auto;
+    height: auto;
+    height: 70px;
+    padding: 7px;
+    width:50%;
+    background-color: rgba(0,0,0,0.5);
+    color:white;
+}
+.post-question .post-body{
+    width: auto;
+}
+.post-question .post-body .post-nav{
+    width: auto;
+    height: 50px;
+    background-color:rgba(0,0,0,0.5) 
+}
+.post-question .post-body .post-area{
+    width: auto;
+    height: auto;
+    padding: 15px;
+}
+.post-question .post-body .post-area{
+    width: auto;
+    height: auto;
+    padding: 15px;
+}
+.post-question .post-body .post-area .post-question-div .brief-info{
+    width: auto;
+    height: auto;
+    border-style: groove;
+    border-radius: 4px;
+    border-width: 2px;
+}
+.post-question .post-body .post-area .post-question-div .post{
+   width: auto;
+   height: auto;
+   padding: 4px;
+   margin-top: 2%;
+   margin-bottom: 2%;
+}
+
+.post-question .post-body .post-area .post-question-div .popular-questions{
+    width: auto;
+    height: auto;
+    border-style: groove;
+    border-radius: 4px;
+    border-width: 2px;
+}
+.post-question .post-body .post-area .post-question-div .popular-questions .timeline{
+    width: auto;
+    height: auto;
+    display: inline;
+}
+.post-question .post-body .post-area .post-question-div .popular-questions .question-additions{
+    width: auto;
+    height: auto;
+    display: inline;
+    margin: 4px;
+    padding: 6px;
+    border-style: groove;
+    border-radius: 4px;
+    border-width: 1px;
+}
+.post-question .post-body .post-footer{
+    width: auto;
+    height: 50px;
+    background-color:rgba(0,0,0,0.5) 
+}
