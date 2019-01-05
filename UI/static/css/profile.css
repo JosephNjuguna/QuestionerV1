@@ -1,0 +1,276 @@
+.profile{
+    background-color: blue;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.profile a{
+    color: white;
+    text-decoration: none;
+}
+.profile .profile-nav{
+    padding: 10px;
+    height: 50px;
+    background-color: rgba(0,0,0,0.5);
+}
+.profile  .profile-nav .navbar-items .nav-bar{
+    padding: 8px;
+    display: inline;
+}
+.profile  .profile-nav .navbar-items .nav-bar .nav-left {
+    float: left;
+    padding: 10px;
+}
+.profile  .profile-nav .navbar-items .nav-bar .nav-right li{
+    display: inline-block;
+    float: right;
+    border-style: groove;
+    border-radius: 6px;
+    border-width: 2px;
+    padding: 4px;
+    margin-right: 7px;
+    color: white;
+}
+.profile  .profile-nav .navbar-items .nav-bar .nav-right input{
+    height: 20px;
+    width: 30%;
+    padding: 6px;
+    font-size: 16px;
+    float: right;
+    margin-right: 7px;
+    color: white;
+    display: inline-block;
+    border-style: groove;
+    border-radius: 6px;
+    border-width: 1px;
+    background-color: rgba(0,0,0,0.5);
+}
+/*repeated*/
+.profile .profile-nav .navbar-items .nav-bar .nav-right button{
+    height: auto;
+    width: auto;
+    padding: 6px;
+    font-size: 16px;
+    float: right;
+    margin-right: 7px;
+    color: white;
+    display: inline-block;
+    border-style: groove;
+    border-radius: 6px;
+    border-width: 1px;
+    background-color: rgba(0,0,0,0.5);
+}
+.profile  .profile-nav .navbar-items .nav-bar .nav-right li a{
+    float: right;
+    color: white;
+    margin-right:2px; 
+}
+.profile .profile-body{
+    width: auto;
+    padding: 0px;
+    border-style:groove;
+    border-radius: 4px;
+    border-width: 2px;
+}
+.profile .profile-body .profile-information .user-information{
+    width:15%;
+    padding: 0;
+    height: 100%;
+    float: left;
+    border-style:groove;
+    border-radius: 4px;
+    border-width: 2px;
+    padding: 2px;
+    height: auto;
+    float: left;
+    margin: 0.5%;
+}
+.profile .profile-body .profile-information .user-information .profile-meetup-suggestions{
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.profile .profile-body .profile-information .user-questions{
+    width: 60%;
+    padding:6px;
+    margin: 0.5%;
+    padding: 4px;
+    display: inline-block;
+}
+.profile .profile-body .profile-information .user-questions .profile-control{
+    padding: 4px;
+}
+.profile .profile-body .profile-information .user-questions .profile-control a{
+    width: 60%;
+    padding:6px;
+    margin: 0.5%;
+    padding: 4px;
+    border-color: white;
+    border-style: groove;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 2px;
+    border-bottom-width: 0px;
+}
+.profile .profile-body .profile-information .user-information .info-image{
+    padding:0px;
+    width:100px;
+    height:100px;
+    margin-left: 15%;
+    border-style:groove;
+    border-radius:60px;
+    border-width: 2px;
+}
+.profile .profile-body .profile-information .user-information .info-name{
+    padding:6px;
+    width: auto;
+    height: 25%;
+    border-style:groove;
+    border-radius: 4px;
+    border-width: 2px;
+}
+.profile .profile-body .profile-information .user-information .info-email{
+    padding:6px;
+    width: auto;
+    height: 25%;
+    border-style:groove;
+    border-radius: 5px;
+    border-width: 2px;
+}
+.profile .profile-body .profile-information .user-information .info-button{
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-top:3px;
+    background-color: rgb(6, 6, 94);
+    border-style: groove;
+    width: 80%;
+    height: 40px;
+    padding: 4px;
+    color: white;
+    text-align: center;
+}
+.profile .profile-body .profile-information .user-questions .user-question-feed {
+    padding:6px;
+    margin: 0.5%;
+    padding: 4px;
+    display: inline-block;
+}
+.profile .profile-body .profile-information .user-questions .user-question-feed .question {
+    padding:6px;
+    margin: 0.5%;
+    padding: 4px;
+    display: inline-block;
+    border-style: groove;
+    border-color:white;
+    border-radius: 6px;
+    border-width: 1px;
+}
+.profile .profile-body .profile-information .user-questions .user-question-feed .question .popular-question-view .popular-feed {
+    padding: 4px;
+    height: 55px;
+    margin-left: 2px;
+    width: auto;
+    display: inline;
+    float: right;
+    
+}
+.profile .profile-body .profile-information .user-questions .user-question-feed .question .popular-question-view button {
+    border-radius: 8px;
+    background-color: rgb(6, 6, 94);
+    display: inline-block;
+    border-style: groove;
+    padding: 4px;
+    color: white;
+    text-align: center;
+}
+.profile .profile-body .profile-information .user-questions .user-question-feed .question .popular-question-view  {
+    padding: 4px;
+    padding: 4px;
+    height: 35px;
+ 
+}
+
+.profile .profile-body .profile-information .user-questions .user-question-asked {
+    padding:6px;
+    margin: 0.5%;
+    padding: 4px;
+    display: inline-block;
+}
+.profile .profile-body .profile-information .user-questions .user-question-asked .question {
+    padding:6px;
+    margin: 0.5%;
+    padding: 4px;
+    display: inline-block;
+    border-style: groove;
+    border-color:white;
+    border-radius: 6px;
+    border-width: 1px;
+}
+.profile .profile-body .profile-information .user-questions .user-question-asked .question .popular-question-view .popular-feed {
+    padding: 4px;
+    height: 55px;
+    margin-left: 2px;
+    width: auto;
+    display: inline;
+    float: right;
+    
+}
+.profile .profile-body .profile-information .user-questions .user-question-asked .question .popular-question-view button {
+    border-radius: 8px;
+    background-color: rgb(6, 6, 94);
+    display: inline-block;
+    border-style: groove;
+    padding: 4px;
+    color: white;
+    text-align: center;
+}
+.profile .profile-body .profile-information .user-questions .user-question-asked .question .popular-question-view  {
+    padding: 4px;
+    padding: 4px;
+    height: 35px;
+ 
+}
+
+/* shorten this code tonight*/
+.profile .profile-body .profile-information .user-questions .user-question-commented {
+    padding:6px;
+    margin: 0.5%;
+    padding: 4px;
+    display: inline-block;
+}
+.profile .profile-body .profile-information .user-questions .user-question-commented .question {
+    padding:6px;
+    margin: 0.5%;
+    padding: 4px;
+    display: inline-block;
+    border-style: groove;
+    border-color:white;
+    border-radius: 6px;
+    border-width: 1px;
+}
+.profile .profile-body .profile-information .user-questions .user-question-commented .question .popular-question-view .popular-feed {
+    padding: 4px;
+    height: 55px;
+    margin-left: 2px;
+    width: auto;
+    display: inline;
+    float: right;
+    
+}
+.profile .profile-body .profile-information .user-questions .user-question-commented .question .popular-question-view button {
+    border-radius: 8px;
+    background-color: rgb(6, 6, 94);
+    display: inline-block;
+    border-style: groove;
+    padding: 4px;
+    color: white;
+    text-align: center;
+}
+.profile .profile-body .profile-information .user-questions .user-question-commented .question .popular-question-view  {
+    padding: 4px;
+    padding: 4px;
+    height: 35px;
+ 
+}
