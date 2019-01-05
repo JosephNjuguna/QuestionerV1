@@ -1,0 +1,115 @@
+.index{
+    font-family: sans-serif;
+    font-size: 16px;
+    padding: 0px;
+    margin: 0;
+    color: white;
+    background-color: blue;
+}
+.index a{
+    color: white;
+    text-decoration: none;
+}
+.index .questioner-navbar .navbar-items{
+    padding-bottom: 20px;
+    height: 10%;
+    margin: 0;
+    background-color: rgba(0,0,0,0.5)
+}
+.index .questioner-navbar .navbar-items .nav-bar {
+    display: inline;
+    width:auto;
+    height: auto;
+    margin: 0;
+    padding: 5px;
+}
+.index .questioner-navbar .navbar-items .nav-bar .nav-left{
+    float: left;
+    padding-left: 25px;
+    padding-bottom: 5px;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace
+}
+/*code repeated*/
+.index .questioner-navbar .navbar-items .nav-bar .nav-right .nav-list li{
+    float: right;
+    display: inline;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    padding: 4px;
+    border-color: white;
+    border-style: groove;
+    border-radius: 4px;
+    border-width: 1px;
+}
+.index .body-index .start-intro {
+    width: auto;
+    height: 300px;
+    padding: 55px;
+}
+.index .body-index .start-intro .questioner-header{
+    width: auto;
+    padding: 15px;
+}
+.index .body-index .start-intro .questioner-header .name{
+    height:auto;
+    width: 50%;
+    float: left;
+    font-size: 45px;
+    text-align: center;
+    color: white;
+    background-color: blue
+}
+.index .body-index .start-intro .questioner-header .mini-start  {    
+    padding: 10px;
+    height:auto;
+    width: 40%;
+    float: right;
+    background-color: blue; 
+}
+.index .body-index .start-intro .questioner-header .mini-start .start-button  {    
+    border-color: white;
+    border-style: groove;
+    border-radius: 4px;
+    border-width: 1px; 
+    padding: 10px;
+    float: right;
+    width: auto;
+    color:white;
+    background-color: rgba(0,0,0,0.5)
+}
+.index .index-footer .mainpage-footer{
+    padding: 4px;
+    width: auto;
+    text-align: center; 
+}
+.index .index-footer .mainpage-footer .questioner-info{
+    margin:2px;
+    background-color: rgba(0,0,0,0.5);
+    height: 250px;
+
+}
+.index .mainpage-footer .questioner-info .questioner-contact{
+    width: 32%;
+    height: auto;
+    margin: 1px;
+    padding: 1px;
+    float: left;
+    border-color: white;
+    border-style: groove;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 1px;
+    border-bottom-width: 0px;
+
+}
+.index .mainpage-footer .questioner-info .footer-copyright{
+    width: 100%;
+    float: left;
+    margin: 2px;
+    border-color: white;
+    border-style: groove;
+    border-radius: 4px;
+    border-width: 1px;
+}
+
