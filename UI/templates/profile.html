@@ -8,38 +8,26 @@
     <title>Questioner</title>
 </head>
 <body class="profile">
-    <div>
-        <div class="profile-nav">
-            <nav class="navbar-items">
-                <div class="nav-bar">
-                    <div class="nav-left">
-                        <p>Questioner</p>
-                    </div>
-                    <div class="nav-right">
-                            <nav class="nav-list">
-                            <li class="right "><a href="#meetupcategories">Log Out</a></li>
-                            <li class="right "><a href="#meetupcategories">MeetUp Categories</a></li>
-                            <li> <a href="./popularmeetup.html">Popular Meetups</a> </li>
-                            <li><a href="./dashboard.html">Home</a> </li>
-                            <button class="right">Search</button>
-                            <input  class="right" type="text" placeholder="Search previous meetup you have attended before here...">
-                        </nav>
-                    </div>
-                </div>
-            </nav>
-        </div>
-        <div class="profile-body">
-            <div class="profile-information">
-                <div class="user-information">
-                    <img class="info-image" src="../static/images/one.png" alt=" user image">
-                    <p class="info-name">username : Alan</p>
-                    <p class="info-email">email: alan@mail.com</p>
-                    <button class="info-button">  Edit Profile</button>
-                    <button class="info-button"><a href="#popularquestion">Popular Questions</a></button>
-                    <button class="info-button"><a href="#askedquestion">Questions I asked</a></button>
-                    <button class="info-button"><a href="#questionscommented">Questions I Commented</a></button>
-                    <hr>
-                    <div class="profile-meetup-suggestions">
+        <nav id="navbar-items">
+            <p id="nav-left">Questioner</p>
+            <li id="nav-right"><a href="#meetupcategories">Log Out</a></li>
+            <li id="nav-right"><a href="#meetupcategories">MeetUp Categories</a></li>
+            <li id="nav-right"><a href="./popularmeetup.html">Popular Meetups</a> </li>
+            <li id="nav-right"><a href="./dashboard.html">Home</a> </li>
+            <button id="nav-right">Search</button>
+            <input  id="nav-right" type="text" placeholder="Search previous meetup you have attended before here...">
+        </nav>
+        <div id="profile-body">
+            <div id="user-information">
+                <img id="info-image" src="../static/images/one.png" alt=" user image">
+                <p id="info-name">username : Alan</p>
+                <p id="info-email">email: alan@mail.com</p>
+                <button id="info-button">  Edit Profile</button>
+                <button id="info-button"><a href="#popularquestion">Popular Questions</a></button>
+                <button id="info-button"><a href="#askedquestion">Questions I asked</a></button>
+                <button id="info-button"><a href="#questionscommented">Questions I Commented</a></button>
+                <hr>
+                <div id="profile-meetup-suggestions">
                         <div>
                             <p><b>MeetUps that may Intrest You:</b></p>
                             <p>Android kenya</p>
@@ -57,164 +45,80 @@
                             <p>Coffee Brokers</p>             
                             >
                         </div>
-                    </div>
-                </div> 
-            </div>
-            <div class="profile-information">
-                <div class="user-questions">
-                    <div class="profile-control">
-                        <a href="#popularquestion">Popular Questions Feed</a>
-                        <a href="#askedquestion">Questions asked by user</a>
-                        <a href="#questionscommented">Question commented by user</a>
-                    </div>
-                    <div class="user-question-feed" id="popularquestion">
-                        <div class="question-feed">
-                            <div class="question">
-                                <p> <b>Firebase Meetup Kenya</b>: happening on Thursday 10 Jan 2018 at UoN Towers</p>
-                                <div>
-                                    <p><b><h2>1.</h2></b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam debitis fugiat explicabo, voluptatum iure laborum quas eos totam ut sed facere cumque consequatur quae corrupti voluptates aut tempora eum amet.</p>
-                                    <div class="popular-question-view">
-                                        <p class="popular-feed">posted by <b>Alan meh</b> on Monday 13:16:09pm</p>
-                                        <button class="popular-feed">Upvote 125 </button>
-                                         <button class="popular-feed">Downvote 63</button>
-                                        <button class="popular-feed">comment</button>
-                                        <button class="popular-feed">view comments</button>
-                                    </div>
-                                </div>
-                                <div>
-                                        <p><b><h2>2.</h2></b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam debitis fugiat explicabo, voluptatum iure laborum quas eos totam ut sed facere cumque consequatur quae corrupti voluptates aut tempora eum amet.</p>
-                                        <div class="popular-question-view">
-                                            <p class="popular-feed">posted by <b>Alan meh</b> on Monday 13:16:09pm</p>
-                                            <button class="popular-feed">Upvote 125 </button>
-                                             <button class="popular-feed">Downvote 63</button>
-                                            <button class="popular-feed">comment</button>
-                                            <button class="popular-feed">view comments</button>
-                                        </div>
-                                    </div>
-                                    <div>
-                                            <p><b><h2>3.</h2></b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam debitis fugiat explicabo, voluptatum iure laborum quas eos totam ut sed facere cumque consequatur quae corrupti voluptates aut tempora eum amet.</p>
-                                            <div class="popular-question-view">
-                                                <p class="popular-feed">posted by <b>Alan meh</b> on Monday 13:16:09pm</p>
-                                                <button class="popular-feed">Upvote 125 </button>
-                                                 <button class="popular-feed">Downvote 63</button>
-                                                <button class="popular-feed">comment</button>
-                                                <button class="popular-feed">view comments</button>
-                                            </div>
-                                        </div>
-                            </div>
-                            <div class="question">
-                                    <p><b>Food lovers Kenya</b>: happening on Thursday 22 Jan 2018 at Ankara Grill </p>
-                                    <p><b><h2>1</h2></b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam debitis fugiat explicabo, voluptatum iure laborum quas eos totam ut sed facere cumque consequatur quae corrupti voluptates aut tempora eum amet.</p>
-                                    <div class="popular-question-view">
-                                        <p class="popular-feed">posted by <b>Alan meh</b> on Monday 13:16:09pm</p>
-                                        <button class="popular-feed">Upvote 15 </button>
-                                        <button class="popular-feed">Downvote 3</button>
-                                        <button class="popular-feed">comment</button>
-                                        <button class="popular-feed">view comments</button>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="user-question-asked" id="askedquestion">
-                        <div class="question-feed">
-                                <div class="question">
-                                    <p> <b>Firebase Meetup Kenya</b>: happening on Thursday 10 Jan 2018 at UoN Towers</p>
-                                    <div>
-                                        <p><b><h2>1.</h2></b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam debitis fugiat explicabo, voluptatum iure laborum quas eos totam ut sed facere cumque consequatur quae corrupti voluptates aut tempora eum amet.</p>
-                                        <div class="popular-question-view">
-                                            <p class="popular-feed">posted by <b>Alan meh</b> on Monday 13:16:09pm</p>
-                                            <button class="popular-feed">Upvote 125 </button>
-                                             <button class="popular-feed">Downvote 63</button>
-                                            <button class="popular-feed">comment</button>
-                                            <button class="popular-feed">view comments</button>
-                                        </div>
-                                    </div>
-                                    <div>
-                                            <p><b><h2>2.</h2></b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam debitis fugiat explicabo, voluptatum iure laborum quas eos totam ut sed facere cumque consequatur quae corrupti voluptates aut tempora eum amet.</p>
-                                            <div class="popular-question-view">
-                                                <p class="popular-feed">posted by <b>Alan meh</b> on Monday 13:16:09pm</p>
-                                                <button class="popular-feed">Upvote 125 </button>
-                                                 <button class="popular-feed">Downvote 63</button>
-                                                <button class="popular-feed">comment</button>
-                                                <button class="popular-feed">view comments</button>
-                                            </div>
-                                        </div>
-                                        <div>
-                                                <p><b><h2>3.</h2></b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam debitis fugiat explicabo, voluptatum iure laborum quas eos totam ut sed facere cumque consequatur quae corrupti voluptates aut tempora eum amet.</p>
-                                                <div class="popular-question-view">
-                                                    <p class="popular-feed">posted by <b>Alan meh</b> on Monday 13:16:09pm</p>
-                                                    <button class="popular-feed">Upvote 125 </button>
-                                                     <button class="popular-feed">Downvote 63</button>
-                                                    <button class="popular-feed">comment</button>
-                                                    <button class="popular-feed">view comments</button>
-                                                </div>
-                                            </div>
-                                </div>
-                                <div class="question">
-                                        <p><b>Food lovers Kenya</b>: happening on Thursday 22 Jan 2018 at Ankara Grill </p>
-                                        <p><b><h2>1</h2></b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam debitis fugiat explicabo, voluptatum iure laborum quas eos totam ut sed facere cumque consequatur quae corrupti voluptates aut tempora eum amet.</p>
-                                        <div class="popular-question-view">
-                                            <p class="popular-feed">posted by <b>Alan meh</b> on Monday 13:16:09pm</p>
-                                            <button class="popular-feed">Upvote 15 </button>
-                                            <button class="popular-feed">Downvote 3</button>
-                                            <button class="popular-feed">comment</button>
-                                            <button class="popular-feed">view comments</button>
-                                        </div>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="user-question-commented" id="questionscommented">
-                        <div class="question-feed">
-                            <div class="question">
-                                <p> <b>Firebase Meetup Kenya</b>: happening on Thursday 10 Jan 2018 at UoN Towers</p>
-                                <div>
-                                    <p><b><h2>1.</h2></b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam debitis fugiat explicabo, voluptatum iure laborum quas eos totam ut sed facere cumque consequatur quae corrupti voluptates aut tempora eum amet.</p>
-                                    <div class="popular-question-view">
-                                        <p class="popular-feed">posted by <b>Alan meh</b> on Monday 13:16:09pm</p>
-                                        <button class="popular-feed">Upvote 125 </button>
-                                        <button class="popular-feed">Downvote 63</button>
-                                        <button class="popular-feed">comment</button>
-                                        <button class="popular-feed">view comments</button>
-                                    </div>
-                                </div>
-                                <div>
-                                            <p><b><h2>2.</h2></b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam debitis fugiat explicabo, voluptatum iure laborum quas eos totam ut sed facere cumque consequatur quae corrupti voluptates aut tempora eum amet.</p>
-                                            <div class="popular-question-view">
-                                                <p class="popular-feed">posted by <b>Alan meh</b> on Monday 13:16:09pm</p>
-                                                <button class="popular-feed">Upvote 125 </button>
-                                                 <button class="popular-feed">Downvote 63</button>
-                                                <button class="popular-feed">comment</button>
-                                                <button class="popular-feed">view comments</button>
-                                            </div>
-                                        </div>
-                                        <div>
-                                                <p><b><h2>3.</h2></b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam debitis fugiat explicabo, voluptatum iure laborum quas eos totam ut sed facere cumque consequatur quae corrupti voluptates aut tempora eum amet.</p>
-                                                <div class="popular-question-view">
-                                                    <p class="popular-feed">posted by <b>Alan meh</b> on Monday 13:16:09pm</p>
-                                                    <button class="popular-feed">Upvote 125 </button>
-                                                     <button class="popular-feed">Downvote 63</button>
-                                                    <button class="popular-feed">comment</button>
-                                                    <button class="popular-feed">view comments</button>
-                                                </div>
-                                            </div>
-                                </div>
-                                <div class="question">
-                                        <p><b>Food lovers Kenya</b>: happening on Thursday 22 Jan 2018 at Ankara Grill </p>
-                                        <p><b><h2>1</h2></b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam debitis fugiat explicabo, voluptatum iure laborum quas eos totam ut sed facere cumque consequatur quae corrupti voluptates aut tempora eum amet.</p>
-                                        <div class="popular-question-view">
-                                            <p class="popular-feed">posted by <b>Alan meh</b> on Monday 13:16:09pm</p>
-                                            <button class="popular-feed">Upvote 15 </button>
-                                            <button class="popular-feed">Downvote 3</button>
-                                            <button class="popular-feed">comment</button>
-                                            <button class="popular-feed">view comments</button>
-                                        </div>
-                                </div>
-                        </div>                    
-                    </div>
                 </div>
+            </div> 
+            <div id="profile-questions">
+                    <!--allows user to access different part of the page without scrolling much-->
+                    <div id="control-body">
+                        <a id="profile-control" href="#popularquestion">Popular Questions Feed <button>3</button></a>
+                        <a id="profile-control" href="#askedquestion">Questions asked by Me<button>2</button></a>
+                        <a id="profile-control" href="#questionscommented">Questions I Commented<button>1</button></a>
+                    </div>
+                    <!--popular questions on specific meetups-->
+                    <div id="popularquestion">
+                        <p id="hints">Popular Questions on meetup i will attend <button>3</button></p>
+                        <div>
+                            <p> <b>Firebase Anadra Meetup Kenya</b>: happening on Thursday 10 Jan 2018 at UoN Towers</p>
+                            <p><b><h2>1.</h2></b>Will top Winners will be rewarded??</p>
+                            <p class="feed-time">posted by <b>Alan Wlaker</b> on Monday 13:16:09pm</p>
+                            <button id="popular-feed">Upvote 125 </button>
+                            <button id="popular-feed">Downvote 63</button>
+                            <button id="popular-feed">comment</button>
+                            <button id="popular-feed">view comments</button>
+                        </div>
+                        <div>
+                                <p> <b>Firebase Anadra Meetup Kenya</b>: happening on Thursday 10 Jan 2018 at UoN Towers</p>
+                                <p><b><h2>2.</h2></b>Will there be provision of Tshirts??</p>
+                                <p class="feed-time">posted by <b>Waster</b> on Monday 13:16:09pm</p>
+                                <button id="popular-feed">Upvote 105 </button>
+                                <button id="popular-feed">Downvote 63</button>
+                                <button id="popular-feed">comment</button>
+                                <button id="popular-feed">view comments</button>
+                            </div>
+                            <div>
+                                    <p> <b>Firebase Anadra Meetup Kenya</b>: happening on Thursday 10 Jan 2018 at UoN Towers</p>
+                                    <p><b><h2>3.</h2></b>Will top Winners will be rewarded??</p>
+                                    <p class="feed-time">posted by <b>Alan Wlaker</b> on Monday 13:16:09pm</p>
+                                    <button id="popular-feed">Upvote 125 </button>
+                                    <button id="popular-feed">Downvote 63</button>
+                                    <button id="popular-feed">comment</button>
+                                    <button id="popular-feed">view comments</button>
+                                </div>
+                    </div>
+                    <!--questions users asked-->
+                    <div id="askedquestions">
+                        <p id="hints">Questions i asked <button>2</button></p>
+                        <div>
+                            <p> <b>Firebase Meetup Kenya</b>: happening on Thursday 10 Jan 2018 at UoN Towers</p>
+                            <p><b><h2>1.</h2></b>What will be the top prizes??</p>
+                            <p id="popular-feed">posted by <b>Me</b> on Monday 13:16:09pm</p>
+                            <button id="popular-feed">Upvote 95 </button>
+                            <button id="popular-feed">Downvote 3</button>
+                            <button id="popular-feed">comment</button>
+                            <button id="popular-feed">view comments</button>
+                        </div>
+                        <div>
+                            <p> <b>FoodLovers Kenya</b>: happening on Thursday 10 Jan 2018 at UoN Towers</p>
+                            <p><b><h2>2.</h2></b> When will Food Blog Registration take place??</p>
+                            <p id="popular-feed">posted by <b>Me</b> on Monday 3:16:09am</p>
+                            <button id="popular-feed">Upvote 25 </button>
+                            <button id="popular-feed">Downvote 3</button>
+                            <button id="popular-feed">comment</button>
+                            <button id="popular-feed">view comments</button>
+                        </div>
+                    </div>
+                    <!--questions that user commented on-->
+                    <div  id="questionscommented">
+                        <p id="hints">Question I commented <button>1</button></p>
+                        <p> <b>Firebase Meetup Kenya</b>: happening on Thursday 10 Jan 2018 at UoN Towers</p>
+                        <p><b><h2>1.</h2></b> How much will it cost to register new users??</p>
+                        <p id="feed-time">posted by <b>Sam</b> on Tuesday 9:16:09pm</p>
+                        <button id="popular-feed">Upvote 45 </button>
+                        <button id="popular-feed">Downvote 23</button>
+                        <button id="popular-feed">comment</button>
+                        <button id="popular-feed">view comments</button>
+                    </div>
             </div>
         </div>
-        
-    </div>
 </body>
 </html>
