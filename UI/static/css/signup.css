@@ -3,58 +3,47 @@
     margin: 0;
     color:white;
     font-family: sans-serif;
+    font-size: 16px;
 }
-.signup-body a{
+a{
     color: white;
     text-decoration: none;
 }
-.signup-body .signup-nav{
-    padding: 10px;
+nav{
     height: 50px;
     background-color: rgba(0,0,0,0.5);
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
-.signup-body .signup-nav .navbar-items .nav-bar{
-    padding: 8px;
+li{
     display: inline;
-}
-.signup-body .signup-nav .navbar-items .nav-bar .nav-left {
-    float: left;
+    float: right;
     padding: 10px;
+    margin-right:6px; 
 }
-.signup-body .signup-nav .navbar-items .nav-bar .nav-right li{
-    display: inline-block;
-    float: right;
+button{
+    border-radius: 5px;
     border-style: groove;
-    border-radius: 4px;
-    border-width: 1px;
-    padding: 6px;
-    margin-right: 7px;
-    color: white;
-}
-.signup-body .signup-nav .navbar-items .nav-bar .nav-right li a{
-    float: right;
-    color: white;
-    margin-right:2px; 
-}
-.signup-body .signup-input{
-    width: auto;
-    margin:3%;
-}
-.signup-body .signup-input .input-body{
-    padding: 15px;
     display: inline-block;
+    background-color: rgb(6, 6, 94);
+    margin-top: 2%;
+    width:30%;
+    height: auto;
+    padding: 8px;
+    color: white;
+    text-align: center;
 }
-.signup-body .signup-input .input-body form{
+form{
     border: none;
     border-color: white;
     border-style: groove;
     border-width: 1px;
     border-radius: 16px;
     padding: 20px;
+    display: inline-block;
 
 }
-.signup-body .signup-input .input-body .input{
-    display: inline-block;
+input{
     width: 70%;
     height: 35px;
     padding: 6px;
@@ -62,42 +51,56 @@
     text-align: center;
     font-size: 16px;
     margin: 4px;
-    border-radius: 4px;
-    border-style: groove;
-    border-top-width: 0px;
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-bottom-width: 3px;
+    border-radius: 6px;
+    border: none;
     background-color: rgba(0,0,0,0.5);
 }
-
-.signup-body .signup-input .input-body .submit-signup{
-    border-radius: 10px;
-    background-color: rgb(6, 6, 94);
-    margin-top: 2%;
-    display: inline-block;
-    border-style: groove;
-    width: 40%;
-    height: 30px;
-    padding: 4px;
-    color: white;
-    text-align: center;
-}
-.signup-body .mainpage-footer{
-    padding: 4px;
+footer{
+    padding-left: 20px;
+    padding-top:6px; 
     width: auto;
-    margin-top: 2%;
-    text-align: center; 
-    background-color: rgba(0,0,0,0.5);
+    border-color: white;
+    border-style: groove;
+    border-width: 1px;
+    border-radius: 1px
 }
-.signup-body .mainpage-footer .questioner-info{
-    margin:2px;
+.signup-body #nav-left {
+    float: left;
+    font-size: 18px;
+    padding-left:16px;
+    text-decoration: underline;
+}
+.signup-body #nav-right{
+    border-style: groove;
+    border-radius: 4px;
+    border-width: 1px;
+}
+/*sign up form*/
+.signup-body #signup-input{
+    width: auto;
+    margin:3%;
+}
+.signup-body #input-body{
+    padding: 15px;
     display: inline-block;
 }
-.signup-body .mainpage-footer .questioner-info .questioner-contact{
+.signup-body #hint{
+    padding:0;
+    margin: 0;
+    float: none;
+}
+.signup-body #link {
+   cursor: pointer;
+   color: red;
+}
+.signup-body #questioner-info p{
+    text-align: center;
+    margin:16px;
+}
+.signup-body #questioner-contact{
     width: 32%;
+    height: 150px;
     margin: 1px;
-    height: 50%;
     padding: 1px;
     float: left;
     border-color: white;
@@ -106,14 +109,5 @@
     border-left-width: 0px;
     border-right-width: 1px;
     border-bottom-width: 0px;
+    background-color: rgba(0,0,0,0.5);
 }
-.signup-body .mainpage-footer .questioner-info .footer-copyright{
-    width: 100%;
-    float: left;
-    margin: 2px;
-    border-color: white;
-    border-style: groove;
-    border-radius: 4px;
-    border-width: 1px;
-}
-
