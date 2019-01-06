@@ -23,16 +23,20 @@
     color:white;
 }
 .post-question textarea{
-    width: auto;
-    height: auto;
+    width: 99%;
     height: 70px;
     padding: 7px;
-    width:50%;
     background-color: rgba(0,0,0,0.5);
     color:white;
 }
+/*post question navbar*/
 .post-question nav{
     padding: 6px;
+    width: auto;
+    height: auto;
+    width: auto;
+    height: 50px;
+    background-color:rgba(0,0,0,0.5) 
 }
 .post-question nav p{
     float: left;
@@ -60,71 +64,60 @@
 }
 .post-question footer{
     margin: 0;
-}
-.post-question .post-body{
     width: auto;
+    background-color:rgba(0,0,0,0.5); 
+    text-align: center;
+    display: inline-block;
+
 }
-.post-question .post-body .post-nav{
-    width: auto;
-    height: 50px;
-    background-color:rgba(0,0,0,0.5) 
+.post-question h4{
+    padding: 0;
+    margin: 2px;
 }
-.post-question .post-body .post-area{
-    width: auto;
-    height: auto;
-    padding: 15px;
+.post-question i{
+    padding: 0;
+    margin: 2px;
 }
-.post-question .post-body .post-area .post-question-div .brief-info{
-    width: auto;
-    height: auto;
-    border-style: groove;
-    border-radius: 4px;
-    border-width: 2px;
-    padding: 5px;
+/*posting question text area div */
+.post-question #post-area{
+    padding: 12px;
 }
-.post-question .post-body .post-area .post-question-div .post{
-   width: auto;
-   height: auto;
+.post-question #post{
    padding: 4px;
    margin-top: 2%;
    margin-bottom: 2%;
 }
-
-.post-question .post-body .post-area .post-question-div .popular-questions{
+.post-question #quiz-post{
+    float: right;
+}
+/*popular questions view*/
+.post-question #popular-questions{
     width: auto;
     height: auto;
     border-style: groove;
     border-radius: 4px;
     border-width: 2px;
-    padding: 5px;
+    padding: 2px;
 
 }
-.post-question .post-body .post-area .post-question-div .popular-questions .timeline{
+.post-question #timeline{
     width: auto;
     height: auto;
     display: inline;
+    padding: 2px;
 }
-.post-question .post-body .post-area .post-question-div .popular-questions .question-additions{
+.post-question #question-additions{
     width: auto;
     height: auto;
     display: inline;
-    margin: 4px;
-    padding: 6px;
+    margin: 9px;
+    padding: 8px;
     border-style: groove;
     border-radius: 4px;
     border-width: 1px;
 }
 /* footer */
-.post-question .post-body .post-footer{
-    width: auto;
-    background-color:rgba(0,0,0,0.5); 
-    text-align: center;
-}
-.post-question .post-body .post-footer .mainpage-footer{
-    margin:2px;
-    display: inline-block;
-}
-.post-question .post-body .post-footer .mainpage-footer .questioner-contact{
+.post-question #post-footer .questioner-contact{
     width: 32%;
     margin: 1px;
     height: 50%;
@@ -137,7 +130,7 @@
     border-right-width: 1px;
     border-bottom-width: 0px;
 }
-.post-question .post-body  .post-footer .mainpage-footer .footer-copyright{
+.post-question #post-footer .footer-copyright{
     width: 100%;
     float: left;
     margin: 2px;
