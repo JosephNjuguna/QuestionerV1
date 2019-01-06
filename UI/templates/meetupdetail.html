@@ -8,184 +8,69 @@
     <title>Questioner</title>
 </head>
 <body class="meetup-detail">
-    <div>
-        <div class="meetup-navbar">
-            <nav class="navbar-items">
-                <div class="nav-bar">
-                        <div class="nav-left">
-                                <p>Questioner</p>
-                            </div>
-                    <div class="nav-right">
-                            <nav class="nav-list">
-                            <li> <a href="./popularmeetup.html">popular Meetups</a> </li>
-                            <li> <a href="./aboutus.html"> About us</a></li>
-                            <li><a href="./profile.html">Profile</a> </li>
-                            <button >Search</button>
-                            <input  class="right" type="text" placeholder="Search any meetup here e.g food meetups,sports...">
-                        </nav>
-                    </div>
+        <nav id="navbar-items">
+            <p id="nav-left">Questioner</p>
+            <li id="nav-right"> <a href="./popularmeetup.html">popular Meetups</a> </li>
+            <li id="nav-right"> <a href="./aboutus.html"> About us</a></li>
+            <li id="nav-right"><a href="./profile.html">Profile</a> </li>
+            <button  id="nav-right">Search</button>
+            <input  class="right" type="text" placeholder="Search any meetup here e.g food meetups,sports...">
+        </nav>
+        <div id="meetup-info">
+                <div id="details">
+                    <img src="/UI/static/images/game.jpeg" alt="">
+                    <p id="meetup-description-info"> <b>Meetup Name : </b> Video Game Lovers</p>
+                    <p id="meetup-description-info"> <b>Reason to Attend : </b> learn how to earrn by playing videos online</p>
+                    <p id="meetup-description-info"> <b>Meet Up Description : </b>Best gamers in the country will convine together and advice other gamers how tp make the most by playing video games</p>
+                    <p id="meetup-description-info"> <b>Meet up event date : </b> created on : 1/1/2019</p>
+                    <p id="meetup-description-info"> <b>Meet up Hosted by : </b> Host of the event <b>EA sports</b></p>
+                    <p id="meetup-description-info"> <b>Meet up Created on : </b> 2019Sat Jan 5 06:20am</p>
+                    <button id="meetup-more">Attend meetup</button>
+                    <button id="meetup-more">Share</button>
+                    <button id="meetup-more"><a href="./postquestion.html">Ask Question</a></button>
                 </div>
-            </nav>
-        </div>
-        <div class="detail-others">
-                <div class="meetup-details">
-                    <div class="meetup-info">
-                        <img src="/UI/static/images/one.png" alt="">
-                        <div class="meetup-description">
-                            <p class="meetup-description-info"> <b>Meetup Name : </b> Machine learning with python</p>
-                            <p class="meetup-description-info"> <b>Reason to Attend : </b> machine learning with python is a mmet up amimng to teach youths about AI and machine learning</p>
-                            <p class="meetup-description-info"> <b>Meet Up Description : </b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam ut possimus, nam unde tempore, totam sunt veritatis laudantium, assumenda suscipit sit repellendus quo velit! Qui laudantium debitis corrupti numquam soluta.</p>
-                            <p class="meetup-description-info"> <b>Meet up event date : </b> created on : 1/1/2019</p>
-                            <p class="meetup-description-info"> <b>Meet up Hosted by : </b> Host of the event <b>John Doe</b></p>
-                            <p class="meetup-description-info"> <b>Meet up Created on : </b> Sat Jan 5 06":20am</p>
-                            <button class="meetup-more">Attend meetup</button>
-                            <button class="meetup-more">Share</button>
-                            <button class="meetup-more">More</button>
-                        </div> 
-                    </div>  
-                </div>
-                <div class="meetup-details">
-                    <div class="other-meetups">
+                <div id="others">
+                    <div id="meetups">
                         <p>Meets Ups based <br> on your Interest:</p>
-                        <div>
-                            <p>Android kenya</p>
-                            <p>Kenya farmers</p>
-                            <p>Coffee Brokers</p>
-                            <p>NSE thanksgiving</p>
-                            <p>Android kenya</p>
-                            <p>Kenya farmers</p>
-                            <p>Coffee Brokers</p>
-                            <p>NSE thanksgiving</p> <p>Android kenya</p>
-                            <p>Kenya farmers</p>
-                            <p>Coffee Brokers</p>
-                            <p>NSE thanksgiving</p> <p>Android kenya</p>
-                            <p>Kenya farmers</p>
-                            <p>Coffee Brokers</p>
-                        >
-                        </div>
+                        <p>Android kenya</p>
+                        <p>Coffee Brokers</p>
+                        <p>NSE thanksgiving</p> 
+                        <p>Android kenya</p>
+                        <p>Kenya farmers</p>
+                        <p>Coffee Brokers</p>  
+                        <p>Kenya farmers</p>
+                        <p>Coffee Brokers</p>  
+                        <p>Kenya farmers</p><p>Android kenya</p>
+                        <p>Kenya farmers</p>
+                        <p>Coffee Brokers</p>  
+                        <p>Android kenya</p>
+                        <p>Kenya farmers</p>
+                        <p>Kenya farmers</p>
+                        <p>Coffee Brokers</p>
                     </div>
                 </div>
-        </div>
-        <div class="meetup-questions">
-            <p class="quiz-header"><b>Questions</b></p>
-            <div class="question-body">
-                <!--question div-->
-                <div class="question">
-                    <p class="question-id"> Lorem iessitatibus, repudiandae optio, eligendi nam, enim illum eveniet </p>
-                    <h5>posted by: Alan Meh  at Mon Jan 12:03pm</h5>
-
-                    <button class="question-additions">upvote : 124</button>
-                    <button class="question-additions">downvote : 32</button>
-                    <button class="question-additions">add comment</button>
-                    <button class="question-additions"><a href="./viewcomments.html">view comments</a> </button>
-                </div>
-                <!--comments div-->
-                <h2 class="comment-header">Comments</h2>
-                <div class=comments>
-                    <div class="comment-view">
-                        <p class="question-comment" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quam deleniti! Alias placeat ipsam nulla, vero numquam deleniti est reprehenderit sapiente qui iure laudantium, fuga esse. Dolorem veniam maiores ex.</p>
-                        <h6>posted by: Alan Meh  at Mon Jan 12:03pm</h6><button>like it</button> 
-                    </div>
-                    <div class="comment-view">
-                        <p class="question-comment" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quam deleniti! Alias placeat ipsam nulla, vero numquam deleniti est reprehenderit sapiente qui iure laudantium, fuga esse. Dolorem veniam maiores ex.</p>
-                        <h6>posted by: Alan Meh  at Mon Jan 12:03pm</h6><button>like it</button> 
-                    </div>
-                    <p> <a class="comment-link" href="./viewcomments.html">View All Comments</a></p>
-                    <div class="post-comment">
-                        <textarea class="comment-area" name="text area" id="#textarea" placeholder=" enter your comment here"></textarea>
-                        <button class="comment-post">post comment</button>
-                    </div>  
-                </div>
-            </div>
-            <div class="question-body">
-                    <!--question div-->
-                    <div class="question">
-                        <p class="question-id"> Lorem iessitatibus, repudiandae optio, eligendi nam, enim illum eveniet </p>
-                        <h5>posted by: Alan Meh  at Mon Jan 12:03pm</h5>
-    
-                        <button class="question-additions">upvote : 124</button>
-                        <button class="question-additions">downvote : 32</button>
-                        <button class="question-additions">add comment</button>
-                        <button class="question-additions"><a href="./viewcomments.html">view comments</a> </button>
-                    </div>
-                    <!--comments div-->
-                    <h2 class="comment-header">Comments</h2>
-                    <div class=comments>
-                        <div class="comment-view">
-                            <p class="question-comment" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quam deleniti! Alias placeat ipsam nulla, vero numquam deleniti est reprehenderit sapiente qui iure laudantium, fuga esse. Dolorem veniam maiores ex.</p>
-                            <h6>posted by: Alan Meh  at Mon Jan 12:03pm</h6><button>like it</button> 
-                        </div>
-                        <div class="comment-view">
-                            <p class="question-comment" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quam deleniti! Alias placeat ipsam nulla, vero numquam deleniti est reprehenderit sapiente qui iure laudantium, fuga esse. Dolorem veniam maiores ex.</p>
-                            <h6>posted by: Alan Meh  at Mon Jan 12:03pm</h6><button>like it</button> 
-                        </div>
-                        <p> <a class="comment-link" href="./viewcomments.html">View All Comments</a></p>
-                        <div class="post-comment">
-                            <textarea class="comment-area" name="text area" id="#textarea" placeholder=" enter your comment here"></textarea>
-                            <button class="comment-post">post comment</button>
-                        </div>  
-                    </div>
-                </div>
-                <div class="question-body">
-                        <!--question div-->
-                        <div class="question">
-                            <p class="question-id"> Lorem iessitatibus, repudiandae optio, eligendi nam, enim illum eveniet </p>
-                            <h5>posted by: Alan Meh  at Mon Jan 12:03pm</h5>
-        
-                            <button class="question-additions">upvote : 124</button>
-                            <button class="question-additions">downvote : 32</button>
-                            <button class="question-additions">add comment</button>
-                            <button class="question-additions"><a href="./viewcomments.html">view comments</a> </button>
-                        </div>
-                        <!--comments div-->
-                        <h2 class="comment-header">Comments</h2>
-                        <div class=comments>
-                            <div class="comment-view">
-                                <p class="question-comment" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quam deleniti! Alias placeat ipsam nulla, vero numquam deleniti est reprehenderit sapiente qui iure laudantium, fuga esse. Dolorem veniam maiores ex.</p>
-                                <h6>posted by: Alan Meh  at Mon Jan 12:03pm</h6><button>like it</button> 
-                            </div>
-                            <div class="comment-view">
-                                <p class="question-comment" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quam deleniti! Alias placeat ipsam nulla, vero numquam deleniti est reprehenderit sapiente qui iure laudantium, fuga esse. Dolorem veniam maiores ex.</p>
-                                <h6>posted by: Alan Meh  at Mon Jan 12:03pm</h6><button>like it</button> 
-                            </div>
-                            <p> <a class="comment-link" href="./viewcomments.html">View All Comments</a></p>
-                            <div class="post-comment">
-                                <textarea class="comment-area" name="text area" id="#textarea" placeholder=" enter your comment here"></textarea>
-                                <button class="comment-post">post comment</button>
-                            </div>  
-                        </div>
-                    </div>
-        </div>
+        </div>  
         <!-- #questioner footer -->
-    <div class="mainpage-footer">
-            <footer class="questioner-info">
-                <div class="questioner-contact">
+        <footer id="questioner-info">
+                <div id="questioner-contact">
                     <p>Questioner</p>
                     <p>Lorem ipsum dolor sit </p>
                 </div>
-                <div class="questioner-contact">
+                <div id="questioner-contact">
                     <p>Contact info</p>
                     <p>Lorem ilor, sit amet consectetur adipisicing elit. Et adipisci dolore minima, nesciunt, impedit
                         consequatur pariatur repellat placeat esse deserunt quis provident illum quod sed veritatis eum
                         molestiae nam voluptatibus. </p>
-        
                 </div>
-                <div class="questioner-contact">
+                <div id="questioner-contact">
                     <p>Questioner mission and values</p>
                     <p>Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, expedita.
                         Illo labore rem voluptatum officiis? Assumenda modi molestias, natus quaerat error fugit dignissimos
                         architecto neque beatae, tenetur quis porro illum! </p>
-        
                 </div>
                 <br>
-                <div class="footer-copyright">
-                    <p>Questioner</p>
-                    <p>2019</p>
-        
-                </div>
-        
-            </footer>
-        </div>
-    </div>
+                <p>Questioner</p>
+                <p>2019</p>
+        </footer>
 </body>
 </html>
