@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../static/css/postquestion.css">
+    <link rel="stylesheet" href="../static/css/base.css">
     <title>Questioner</title>
 </head>
 <body class="post-question">
-    <div class="post-body">
-        <nav>
-            <p>Questioner</p>
-            <li> <a href="./dashboard.html">Home</a></li>
-            <li> <a href="./profile.html">Profile</a></li>
-            <li> <a href="#">Popular MeetUp</a></li>
+        <nav id="navbar-items">
+            <p  id="nav-left">Questioner</p>
+            <li id="nav-right"><a href="./profile.html">Profile</a> </li>
+            <li id="nav-right"><a href="#">Popular Meetups</a> </li>
+            <li id="nav-right"><a href="#">MeetUp Categories</a></li>
+            <li id="nav-right">Search</li>
+            <input id="nav-right" type="text" placeholder="Search any meetup here e.g food meetups,sports...">
         </nav>
         <div id="post-area">
             <h4>Food lovers : meeting on Mon 1/1/2019 at 10:00am at Ankara Grill : Agenda :Blog Award</h3>
             <i>Be free to ask any Questions</i>
-                <div id="post">
+            <div id="post">
                 <textarea name="" id="" cols="30" rows="10" placeholder="enter your question here"></textarea>
                 <button id="quiz-post"> post post-question</button>
             </div>
@@ -35,22 +36,28 @@
                 </div>
             </div>
         </div>
-        <footer id="post-footer">
+        <footer id="questioner-info">
             <div id="questioner-contact">
-                        <p>Questioner</p>
-                        <p>Lorem ipsum dolor sit </p>
+                <p><b>Questioner</b></p>
+                <p>location:</p>
+                <p>Kenya, Nairobi</p>
+                <p>P.O Box 23435-5546</p>
             </div>
             <div id="questioner-contact">
-                        <p>Contact info</p>
-                        <p>Lorem ilor, sit amet consectetur adipisicing elit. Et adipisci dolore minima, nesciunt, impedit consequatur pariatur repellat placeat esse deserunt quis provident illum quod sed veritatis eum molestiae nam voluptatibus. </p>
+                <p><b>Contact info</b></p>
+                <p>questioner@mail.com</p>
+                <p>phone number :07123456987 </p>
+                <p>Reach us at instagram: @meetup</p>
             </div>
             <div id="questioner-contact">
-                        <p>Questioner mission and values</p>
-                        <p>Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, expedita. Illo labore rem voluptatum officiis? Assumenda modi molestias, natus quaerat error fugit dignissimos architecto neque beatae, tenetur quis porro illum! </p>
+                <p><b>Questioner mission and values</b></p>
+                <p>Connect People of same Intrest</p>
+                <p>Create Memorable Meetups</p>
+                <p>Build the Best Public Relations</p>
             </div>
-            <p>Questioner</p>
-            <p>2019</p>
+            <br>
+            <h3>Questioner</h3>
+            <h3>2019</h3>
         </footer>
-    </div>
 </body>
 </html>
