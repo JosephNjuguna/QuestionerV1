@@ -229,6 +229,7 @@ i{
     padding-top: 6px;
     padding-bottom: 6px;
 }
+
 .meetup-detail #post-comment{
     width: auto;
     height: auto;
@@ -241,7 +242,6 @@ i{
     border-radius: 4px;
     border-width: 1px;
     margin: 3px;
-
 }
 .meetup-detail #post{
     width:auto;
@@ -404,6 +404,13 @@ i{
     height: 200px;
     width: 300px;
     margin: 0;
+}
+.dashboard-body #meetup-view a{
+    text-decoration: none;
+    border-style: groove;
+    border-radius: 4px;
+    border-width: 1px;
+    padding: 4px;
 }
 /*profile page code*/
 .profile #info-button{
