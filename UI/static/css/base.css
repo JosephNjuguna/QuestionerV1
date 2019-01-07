@@ -503,3 +503,15 @@ i{
     border-width:1px;
     border-radius: 4px;
 }
+.admin #meetup-admin{
+    padding: 6px;
+    margin: 4px;
+}
+.admin #feed{
+    padding: 6px;
+    border-style: groove;
+    border-width:1px;
+    border-radius: 4px;
+    margin: 4px;
+}
+
