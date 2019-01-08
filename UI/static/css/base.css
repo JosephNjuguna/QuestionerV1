@@ -1,16 +1,16 @@
 body{
-    background-color: blue;
-    margin: 0;
-    color:white;
-    font-family: sans-serif;
-    font-size: 16px;
+     background-color: blue; 
+     margin: 0; 
+     color:white; 
+     font-family: sans-serif; 
+     font-size: 16px; 
 }
 /*a base code */
 a{
     color: white;
     text-decoration: none;
 }
-/*div base code*/
+/*div base code added*/
 div{
     width: auto;
     height: auto;
@@ -28,7 +28,6 @@ nav{
 button{
     border-radius: 5px;
     border-style: groove;
-    display: inline-block;
     background-color: rgba(0,0,0,0.5);
     margin-top: 2%;
     width:30%;
@@ -86,7 +85,6 @@ footer{
     padding: 10px;
     margin:0;
     width: auto;
-    height:250px;
 }
 /*base textarea code*/
 textarea{
@@ -106,6 +104,218 @@ i{
     padding: 0;
     margin: 2px;
 }
+@media screen and (max-width:400px){
+    li{
+        display: none;
+    }
+    #input{
+        display: inline;
+        width: 70%;
+        height: 35px;
+        padding: 6px;
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        border-color: white;
+        border-style: groove;
+        border-width: 0px;
+        border-radius: 5px;   
+        background-color: rgba(0,0,0,0.5);
+    }
+    #nav-left {
+        text-align: center;
+        font-size: 24px;
+        text-decoration: underline;
+    }
+    #nav-right input{
+        display: none
+    }
+    #name{
+        display: none;
+    }
+    #mini-start{
+        padding: 10px;
+    }
+    #start-intro div{
+        text-align: center; 
+        padding: 10px;
+        margin:2px;
+        width: auto;    
+    }
+    #questioner-info div{
+        text-align: center; 
+        padding: 10px;
+        margin:1px;
+        width: auto;
+        border-radius: 4px;
+        background-color: rgba(0,0,0,0.5)
+    }
+    #auth-input{
+        padding: 10px;
+        border-width: 0px;
+    }
+    #meetup-view{
+        border-radius: 0px;
+        background-color: rgba(0,0,0,0.5);
+        margin-top:2px;
+        padding: 6px;
+        border-color: white;
+        border-style: groove;
+        border-bottom-width: 1px;
+        border-left-width: 0px;
+        border-right-width: 0px;
+        border-top-width: 0px;
+    }
+    #meetup-view img{
+        border-radius: 6px;
+        margin:2px;
+        width: 100%;
+    }
+    #details{
+        margin:0px;
+        text-align: center;
+    }
+    #details img{
+        width: 100%;
+    }
+    #others{
+        display: none;
+    }
+    #post-comment{
+        border-style: groove;
+        border-bottom-width: 1px;
+        border-left-width: 0px;
+        border-right-width: 0px;
+        border-top-width: 1px;
+        margin-top: 5px;
+        padding: 5px;
+    }
+    #post-comment textarea{
+        width: 94%;
+        margin: 3px;
+    }
+    #coment-post{
+        margin-left:70%; 
+    }
+    #question-additions{
+        margin-left:1px; 
+    }
+    #post-area{
+        width: auto;
+        padding: 4px;
+    }
+    #post-area h3{
+        width: auto;
+        text-align: center;
+        padding: 2px;
+        margin: 0px;
+    }
+    #post{
+        width:auto;
+        display: inline;
+    }
+    #post button{
+        float: right;
+        cursor: pointer;
+        margin: 0;
+    }
+    #post textarea{
+        width:70%;
+    }
+    #popular-questions{
+        width: auto;
+        padding: 4px;
+    }
+    #question-buttons {
+        width: auto;
+        height: 25%;
+        margin: 0px;
+        padding: 6px;
+    }
+user information
+.profile #user-information{
+    width:15%;
+    padding: 0;
+    height: 100%;
+    float: left;
+    border-style:groove;
+    border-radius: 4px;
+    border-width: 2px;
+    padding: 2px;
+    height: auto;
+    float: left;
+    margin: 0.5%;
+}
+/*questions body*/
+.profile #profile-questions{
+    width:auto;
+    padding: 0;
+    height:auto;
+    margin: 1%;
+}
+.profile #info-image{
+    padding:0px;
+    width:100%;
+    height:100%;
+}
+.profile #info-name{
+    padding:6px;
+    width: auto;
+    height: 50%;
+    border-style:groove;
+    border-radius: 4px;
+    border-width: 2px;
+    text-align: center;
+}
+.profile #info-email{
+    padding:6px;
+    height: 25%;
+    border-style:groove;
+    border-radius: 5px;
+    border-width: 2px;
+    text-align: center;
+}
+#info-button{
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+}
+/*question information belonging to user*/
+.profile #profile-control {
+    width: auto;
+    display: block;
+    border-style: groove;
+    border-radius: 4px;
+    border-width: 1px;
+    text-align: center;
+    margin: 3px;
+}
+.profile #popularquestion{
+    padding: 8px;
+    margin: 4px;
+    height: auto;
+    border-style: groove;
+    border-width:1px;
+    border-radius: 4px;
+} 
+.profile #askedquestions {
+    padding: 8px;
+    height: auto;
+    border-style: groove;
+    border-width:1px;
+    border-radius: 4px;
+}
+.profile #questionscommented {
+    padding: 8px;
+    height: auto;
+    border-style: groove;
+    border-width:1px;
+    border-radius: 4px;
+}
+}
+
+
+@media screen and (max-width:1500px){
 #nav-right{
     border-style: groove;
     border-radius: 4px;
@@ -357,13 +567,13 @@ i{
 }
 /*index*/
 .index #start-intro {
-    width: auto;
-    height: 300px;
-    padding: 55px;
+     width: auto; 
+     height: 300px; 
+     padding: 55px; 
 }
 .index #questioner-header{
-    width: auto;
-    padding: 15px;
+     width: auto; 
+     padding: 15px; 
 }
 .index #name{
     height:auto;
@@ -521,4 +731,4 @@ i{
     border-radius: 4px;
     margin: 4px;
 }
-
+}
