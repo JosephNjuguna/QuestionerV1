@@ -7,7 +7,7 @@ def signup():
     return make_response(jsonify({"message": "welcome to users sign up"}),201)
 
 @users_api.route('/auth/login',methods=["POST"])
-def signup():
+def login():
     return make_response(jsonify({"message": "welcome to users log in"}),201)
 
 
