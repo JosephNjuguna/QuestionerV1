@@ -42,13 +42,13 @@ class QuestionsTest(unittest.TestCase):
         response = self.app.post('/api/v1/questions', data= json.dumps(self.question1), content_type='application/json')
         self.assertEqual(response.status_code, 201)
 
-    def test_no_tittle_question_post(self):
+    def test_empty_tittle_question_post(self):
         pass
 
-    def test_no_body_question_post(self):
+    def test_empty_body_question_post(self):
         pass
 
-    def test_no_meetup_id(self):
+    def test_empty_meetup_id(self):
         pass
 
     def test_invalid_user_id(self):
