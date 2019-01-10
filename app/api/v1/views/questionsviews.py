@@ -1,10 +1,14 @@
 from flask import Flask,Blueprint,jsonify,make_response
+from app.api.v1.models.questions import questions_list,QuestionClass
 
 question_api = Blueprint('questions_api',__name__,)
 
+questionmodel = QuestionClass()
+
 @question_api.route('/questions/<string:id>',methods=["GET"])
-def getQuestion(id):
-    return make_response(jsonify({"message":"get details of specific question"}),200)
+def get_question(id):
+    question_specific = questionmodel.get_one_question(id)
+    return make_response(jsonify({"message": question_specific}),200)
 
 @question_api.route('/questions',methods=["POST"])
 def question_post():
