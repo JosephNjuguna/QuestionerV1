@@ -26,3 +26,8 @@ class MeetupTest(unittest.TestCase):
 
     def test_not_found(self):
         pass
+
+    def test_user_rsvp(self):
+         """test user rsvp for a meetup """
+        response = self.app.post('/api/v1/meetups/1/rsvps', data= json.dumps(self.record2), content_type='application/json')
+        self.assertEqual(response.status_code, 200)
