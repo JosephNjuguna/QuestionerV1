@@ -5,6 +5,9 @@ question_api = Blueprint('questions_api',__name__,)
 
 questionsclass = QuestionClass()
 
+@question_api.route('/questions/<string:id>',methods=["GET"])
+def getQuestion(id):
+    return make_response(jsonify({"message":"get details of specific question"}),200)
 
 @question_api.route('/questions',methods=["POST"])
 def question_post():

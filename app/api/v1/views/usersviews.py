@@ -42,7 +42,3 @@ def login():
     return make_response(jsonify({"message": "Authentication Failed"}),401)
 
 
-
-
-
-
