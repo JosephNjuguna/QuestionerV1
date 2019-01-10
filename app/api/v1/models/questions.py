@@ -11,5 +11,5 @@ class QuestionClass():
                 "questionbody": body
             }]
         }
-        questiondata =  user_list.append(payload)
+        questiondata =  questions_list.append(payload)
         return True
