@@ -10,7 +10,7 @@ install:
   - pip install pytest-cov
 
 script: 
-  - python -m pytest --cov=app
+  - python -m pytest --cov=app/test
 
 after_success:
   - coveralls
