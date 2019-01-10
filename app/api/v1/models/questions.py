@@ -13,3 +13,10 @@ class QuestionClass():
         }
         questiondata =  questions_list.append(payload)
         return True
+    
+    def get_one_question(self,id):
+        question_id = [quiz for quiz in questions_list if quiz[id]== id]
+        if not  question_id:
+            return False
+        return question_id
+        
