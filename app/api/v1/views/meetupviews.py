@@ -1,7 +1,8 @@
-from flask import Flask,Blueprint,jsonify,make_response
+from flask import Flask,Blueprint,jsonify,make_response, request
 from app.api.v1.models.meetup import MeetUpModels, meetuplist
 
 meetup_api = Blueprint('meetup_api',__name__,)
+meetupmodel = MeetUpModels()
 
 @meetup_api.route('/meetups/upcoming',methods=["GET"])
 def upcomingMeetup():
@@ -27,4 +28,14 @@ def respondMeetuprsvp(id):
         can RSVPS for 
         a specific meetup
     """
-    return make_response(jsonify({"message":"PLEASE RSVP TO A MEET UP"}),201)
+    data = request.get_json()
+    meetup_id= id
+    topic = data['topic']  
+    status = data['status']
+    username = data['name']
+
+    if topic == "" or status == ""or username == "" or meetup_id == "":
+        return make_response(jsonify({"message":"Fields cnat be empty"}))
+
+    user_rsvp = meetupmodel.rsvp_meetup(meetup_id,topic,status,username)
+    return make_response(jsonify({"Successful RSVP TO the MEET UP" : user_rsvp}),201)
