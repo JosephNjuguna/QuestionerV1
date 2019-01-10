@@ -41,4 +41,3 @@ def login():
         return make_response(jsonify({"message":"User logged in succcessfully" }),200)
     return make_response(jsonify({"message": "Authentication Failed"}),401)
 
-

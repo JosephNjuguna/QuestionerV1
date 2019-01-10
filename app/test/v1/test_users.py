@@ -9,34 +9,37 @@ class UserTest(unittest.TestCase):
         self.application = app
         self.app = self.application.test_client()
         self.user1= {
-            'username': "Joseph Njuguna",
-            'email':"test1@gmail.com",
-            'password':'1234',
-            'confirmpassword':'1234'
+            "firstname": 'joe',
+            "lastname":'alan',
+            "email": 'test1@mail.com',
+            "password":'a12n',
+            "confirmpassword":'a12n'
         }
         self.user2 ={
             'email': 'test1@gmail.com',
-            'password':'1234'
+            'password':'a12n'
         }
         self.user3= {
-            'username': "Joseph Njuguna",
-            'email':"",
-            'password':'1234',
-            'confirmpassword':'1234'
+            "email": 'test1@mail.com',
+            "password":'',
         }
         self.user4 ={
-            'email': 'test1@gmail.com',
-            'password':''
+            'email': '',
+            'password':'a12n'
         }
 
-    def test_good_auth(self):
-        pass
-    
     def test_good_log_in(self):
-        pass
+        """test good user log in """
+        response = self.app.post('/api/v1/auth/login', data= json.dumps(self.user2), content_type='application/json')
+        self.assertEqual(response.status_code, 200)
     
-    def test_bad_auth(self):
-        pass
+    def test_correct_email_empty_password(self):
+        """test empty password log in """
+        response = self.app.post('/api/v1/auth/login', data= json.dumps(self.user3), content_type='application/json')
+        self.assertEqual(response.status_code, 400)
     
-    def test_bad_log_in(self):
-        pass
+    def test_empty_email_correct_password(self):
+        """test empty email log in """
+        response = self.app.post('/api/v1/auth/login', data= json.dumps(self.user4), content_type='application/json')
+        self.assertEqual(response.status_code, 400)
+    
