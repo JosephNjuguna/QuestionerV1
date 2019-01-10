@@ -32,25 +32,30 @@ class QuestionsTest(unittest.TestCase):
             'title' :"Entrance Ticket Price",
             'body' : "How much will be paid by each person for entrance"
         }
-        self.question4={
+        self.question5={
             'user':"",
             'meetup' :2,
             'title' :"Entrance Ticket Price",
             'body' : "How much will be paid by each person for entrance"
         }
+
     def test_qood_question_post(self):
         response = self.app.post('/api/v1/questions', data= json.dumps(self.question1), content_type='application/json')
         self.assertEqual(response.status_code, 201)
 
     def test_empty_tittle_question_post(self):
-        pass
+        response = self.app.post('/api/v1/questions', data= json.dumps(self.question2), content_type='application/json')
+        self.assertEqual(response.status_code, 201)
 
     def test_empty_body_question_post(self):
-        pass
+        response = self.app.post('/api/v1/questions', data= json.dumps(self.question3), content_type='application/json')
+        self.assertEqual(response.status_code, 201)
 
     def test_empty_meetup_id(self):
-        pass
+        response = self.app.post('/api/v1/questions', data= json.dumps(self.question4), content_type='application/json')
+        self.assertEqual(response.status_code, 201)
 
     def test_invalid_user_id(self):
-        pass
+        response = self.app.post('/api/v1/questions', data= json.dumps(self.question5), content_type='application/json')
+        self.assertEqual(response.status_code, 201)
             
