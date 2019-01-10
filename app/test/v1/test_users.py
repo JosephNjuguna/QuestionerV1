@@ -29,7 +29,7 @@ class UserTest(unittest.TestCase):
         }
     def test_good_sign_up(self):
         """Test good user sign up"""
-        response = self.app.post('/api/v1/auth/login', data= json.dumps(self.user1), content_type='application/json')
+        response = self.app.post('/api/v1/auth/signup', data= json.dumps(self.user1), content_type='application/json')
         self.assertEqual(response.status_code, 201)
 
 
