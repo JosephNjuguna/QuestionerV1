@@ -10,4 +10,3 @@ def signup():
 def login():
     return make_response(jsonify({"message": "welcome to users log in"}),201)
 
-
