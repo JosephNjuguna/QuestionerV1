@@ -11,30 +11,14 @@ This is a Crowd-source questions for a meetup. Questioner helps the meetup organ
 questions to be answered. Other users can vote on asked questions and they bubble to the top
 or bottom of the log.
 ----
-#Rquirements
-
-asn1crypto==0.24.0
-astroid==2.1.0
-atomicwrites==1.2.1
-attrs==18.2.0
-cffi==1.11.5
-Click==7.0
-cryptography==2.4.2
+#Requirements
+---
 Flask==1.0.2
-idna==2.8
-isort==4.3.4
-itsdangerous==1.1.0
-Jinja2==2.10
-jwt==0.5.4
-lazy-object-proxy==1.3.1
-MarkupSafe==1.1.0
-mccabe==0.6.1
-more-itertools==5.0.0
-pluggy==0.8.0
-py==1.7.0
-pycparser==2.19
+---
 pylint==2.2.2
+---
 pytest==4.1.0
+---
 six==1.12.0
 typed-ast==1.1.1
 Werkzeug==0.14.1
