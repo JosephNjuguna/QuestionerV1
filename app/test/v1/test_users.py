@@ -27,6 +27,11 @@ class UserTest(unittest.TestCase):
             'email': '',
             'password':'a12n'
         }
+    def test_good_sign_up(self):
+        """Test good user sign up"""
+        response = self.app.post('/api/v1/auth/login', data= json.dumps(self.user1), content_type='application/json')
+        self.assertEqual(response.status_code, 201)
+
 
     def test_good_log_in(self):
         """test good user log in """
