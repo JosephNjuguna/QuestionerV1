@@ -6,5 +6,5 @@ class MeetUpModels():
 
     def get_meetup(self):
         upcoming_meetups = self.list
-        return upcoming_meetups,True
+        return True
 
