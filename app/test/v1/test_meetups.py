@@ -20,6 +20,7 @@ class MeetupTest(unittest.TestCase):
         }
     
     def test_upcoming_meetups(self):
+        """user view upcoming meetups"""
         response = self.app.get('/api/v1/meetups/upcoming', data= json.dumps(self.record1), content_type='application/json')
         self.assertEqual(response.status_code, 200)
 
@@ -36,4 +37,4 @@ class MeetupTest(unittest.TestCase):
     def test_user_rsvp(self):
         """test user rsvp for a meetup """
         response = self.app.post('/api/v1/meetups/1/rsvps', data= json.dumps(self.record2), content_type='application/json')
-        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.status_code, 201)
