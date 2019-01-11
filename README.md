@@ -52,7 +52,9 @@ user post question | [POST] /api/v1/question
 user RSVP for a meetup| [POST] /api/v1/meetups/<meetup:id>/rsvps
 user get a specific question |[GET] /api/v1/meetup/<meetup:id>/questions/<meetup:id>
 admin post a question | [POST] /api/v1/meetups
-user upvote question | [PATCH]/questions/<question:id>/downvote
+user upvote question | [PATCH]/questions/<question:id>/upvote
+user downvote question | [PATCH]/questions/<question:id>/downvote
+
 
 
 **Running Test**
@@ -86,7 +88,7 @@ you will get to run atleast 12 test for the app
 ### BUILT WITH:
 >Flask - Python MicroFramework
 
->Pyhton 3.6
+>Python 3.6
 
 
 
