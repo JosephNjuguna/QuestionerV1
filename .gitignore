@@ -1,6 +1,7 @@
 # Don't track content of these folders
 env
 misc
+config
 .vscode
 config.py
 __pycache__
