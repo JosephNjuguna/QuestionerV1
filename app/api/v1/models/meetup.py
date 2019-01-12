@@ -13,12 +13,9 @@ class MeetUpModels():
         return upcoming_meetups
     
     def get_specific_meeetup(self,id):
-        meetup_id = [id for id in meetuplist if id['id']== id]
-        if meetup_id:
-            return meetup_id
-        return empty_alert
+        data = meetuplist
+        return data
 
-    
     def rsvp_meetup(self,meetup_id,topic,status,username):
         payload = {
             "meetup":meetup_id,
