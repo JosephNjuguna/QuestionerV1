@@ -37,7 +37,6 @@ def login():
         return make_response(jsonify({"message":"Field cant be empty"}),400)
 
     user_authentcation = [user for user in userdata if user['password'] == password and  user['email'] ==  email]
-    if user_authentcation:
+    if not user_authentcation:
         return make_response(jsonify({"message":"User logged in succcessfully" }),200)
     return make_response(jsonify({"message": "Authentication Failed"}),401)
-

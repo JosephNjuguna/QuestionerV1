@@ -25,7 +25,6 @@ class MeetupTest(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
 
     def test_get_record(self):
-        
         pass
     
     def test_user_authorized(self):
