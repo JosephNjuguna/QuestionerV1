@@ -11,6 +11,14 @@ This is a Crowd-source questions for a meetup. Questioner helps the meetup organ
 questions to be answered. Other users can vote on asked questions and they bubble to the top
 or bottom of the log.
 
+Visit the Questioner UI templates on :
+
+https://josephnjuguna.github.io/Questioner/UI/templates/ 
+
+Get the Questioner API on : 
+
+https://thequestioner.herokuapp.com/
+
 ## Prerequisites
 what you need for the app to run ??
 
