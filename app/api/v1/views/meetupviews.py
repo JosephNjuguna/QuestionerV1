@@ -1,5 +1,7 @@
 from flask import Blueprint,jsonify,make_response, request
 from flask_restful import Resource
+import datetime
+import uuid
 
 from app.api.v1.models.meetup import MeetUpModels, meetuplist
 
@@ -8,6 +10,28 @@ meetupmodel = MeetUpModels()
 
 meetupdata = meetuplist
 alert = "Id not found"
+empty_alert = "Fields cant be Empty"
+
+class CreateMeetup(Resource):
+    def __init__(self):
+        self.happeningon = datetime.datetime.utcnow()
+        self.id = uuid.uuid4()
+    
+    def post(self):
+        data = request.get_json()
+
+        for k,v in data.items():
+            if k== "" or v=="":
+                return make_response(jsonify({"message":empty_alert}),400)
+
+        topic = data['topic']
+        location = data['location']
+        date = self.happeningon
+        meetup_id = self.id
+        tag = data['tag']
+
+        createmeetup = meetupmodel.create_meetup(topic, meetup_id, location, date, tag)
+        return make_response(jsonify({"message":createmeetup}),200)
 
 class UpcomingMeetup(Resource):
     def get(self):
