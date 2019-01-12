@@ -1,0 +1,16 @@
+[
+  "app/test/v1/test_meetups.py::MeetupTest::test_get_record",
+  "app/test/v1/test_meetups.py::MeetupTest::test_not_found",
+  "app/test/v1/test_meetups.py::MeetupTest::test_upcoming_meetups",
+  "app/test/v1/test_meetups.py::MeetupTest::test_user_authorized",
+  "app/test/v1/test_meetups.py::MeetupTest::test_user_rsvp",
+  "app/test/v1/test_questions.py::QuestionsTest::test_empty_body_question_post",
+  "app/test/v1/test_questions.py::QuestionsTest::test_empty_meetup_id",
+  "app/test/v1/test_questions.py::QuestionsTest::test_empty_tittle_question_post",
+  "app/test/v1/test_questions.py::QuestionsTest::test_invalid_user_id",
+  "app/test/v1/test_questions.py::QuestionsTest::test_qood_question_post",
+  "app/test/v1/test_users.py::UserTest::test_correct_email_empty_password",
+  "app/test/v1/test_users.py::UserTest::test_empty_email_correct_password",
+  "app/test/v1/test_users.py::UserTest::test_good_log_in",
+  "app/test/v1/test_users.py::UserTest::test_good_sign_up"
+]
