@@ -9,7 +9,7 @@
 ---
 This is a Crowd-source questions for a meetup. Questioner helps the meetup organizer prioritize
 questions to be answered. Other users can vote on asked questions and they bubble to the top
-or bottom of the log.
+or bottom of the log.https://josephnjuguna.github.io/Questioner/UI/templates/
 
 ## Prerequisites
 what you need for the app to run ??
