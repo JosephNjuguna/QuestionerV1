@@ -7,6 +7,20 @@ class MeetUpModels():
     def __init__(self):
         self.list = meetuplist
         self.rsvp = meetuprsvp
+        
+    def create_meetup(self, topic, meetup_id, location, date, tag):
+        payload = {
+            "status": 200,
+            "data" : [ {
+                "topic" : topic,
+                "location" : location ,
+                "happeningOn": date ,
+                "tags" : tag,
+                "id":meetup_id
+            }]
+        }
+        add_meetup = self.list.append(payload)
+        return self.list
 
     def get_meetup(self):
         upcoming_meetups = self.list
