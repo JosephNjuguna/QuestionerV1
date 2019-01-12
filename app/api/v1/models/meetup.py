@@ -1,6 +1,8 @@
 meetuplist = []
 meetuprsvp = []
 
+
+empty_alert = "Id not found "
 class MeetUpModels():
     def __init__(self):
         self.list = meetuplist
@@ -10,6 +12,10 @@ class MeetUpModels():
         upcoming_meetups = self.list
         return upcoming_meetups
     
+    def get_specific_meeetup(self,id):
+        data = meetuplist
+        return data
+
     def rsvp_meetup(self,meetup_id,topic,status,username):
         payload = {
             "meetup":meetup_id,
