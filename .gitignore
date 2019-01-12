@@ -1,9 +1,13 @@
 # Don't track content of these folders
-.misc
-.vscode
-__pycache__
 env
 config.py
+misc
+.vscode
+config.py
+__pycache__
+*__pycache__
+*.pyc
+
 .pytest_cache
 
 # Compiled source #
