@@ -34,6 +34,7 @@ git clone https://github.com/JosephNjuguna/Questioner.git
 ```
 cd Questioner
 ```
+**Running the App**
 
 4. then run the following command on the terminal to start the app 
 
