@@ -39,3 +39,21 @@ class QuestionClass():
                 "body": self.data[0]["body"],
                 "votes": self.data[0]["votes"]
             }]
+
+    def downvote_question(self, id):
+        payload = [payload for payload in self.data if payload['id'] == id]
+
+        if not payload:
+            return False
+
+        downvote_votes = self.data[0]["votes"] + 1
+        self.data[0]["votes"] = downvote_votes
+
+        if self.data:
+            return [{
+                "meetup": self.data[0]["meetup"],
+                "title": self.data[0]["title"],
+                "body": self.data[0]["body"],
+                "votes": self.data[0]["votes"]
+            }]
+
