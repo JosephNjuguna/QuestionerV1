@@ -2,13 +2,12 @@
 env
 misc
 config
-.vscode
+.vscode/
 config.py
 __pycache__
 *__pycache__
 *.pyc
-
-.pytest_cache
+.pytest_cache/
 
 # Compiled source #
 ###################
