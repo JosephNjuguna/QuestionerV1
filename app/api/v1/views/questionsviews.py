@@ -1,4 +1,4 @@
-from flask import Flask, Blueprint, jsonify, make_response, request
+from flask import Blueprint, jsonify, make_response, request
 from flask_restful import Resource
 
 from app.api.v1.models.questions import questions_list,QuestionClass
