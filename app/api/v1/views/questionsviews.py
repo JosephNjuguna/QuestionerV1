@@ -14,7 +14,7 @@ def get_question(id):
 
 class PostQuestion(Resource):
 
-    def question_post(self):
+    def post(self):
         """
         user can post question api endpoint
         """
