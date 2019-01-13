@@ -31,7 +31,18 @@ class UpvoteQuestion(Resource):
                 "data": upvote
             }, 204
 
-@question_api.route('/questions/<string:id>/downvote',methods=["PATCH"])
-def downvoteQuestion(id):
-    return make_response(jsonify({"message":" downvote a question"}),204)
+class DownvoteQuestion(Resource):
+    def __init__(self):
+        self.downvotemodel = questionmodel
 
+    def patch(self, question_id):
+        downvote = self.downvotemodel.downvote_question(id= question_id)
+        if not downvote:
+            return {
+                "status": 404,
+                "error": "No question found"
+                }, 404
+            return {
+                "status": 200,
+                "data": downvote
+            }, 204
