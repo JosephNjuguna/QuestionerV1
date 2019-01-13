@@ -32,7 +32,6 @@ class CreateMeetup(Resource):
 
         createmeetup = meetupmodel.create_meetup(topic, meetup_id, location, date, tag)
         return make_response(jsonify({"message":createmeetup}),200)
-
 class UpcomingMeetup(Resource):
     def get(self):
         """
@@ -43,18 +42,15 @@ class UpcomingMeetup(Resource):
 
 class SpecificMeetup(Resource):
     def __init__(self):
-        pass
+        self.meetup = MeetUpModels()
     def get(self, id):
         """
             a user can get 
             details of a 
             specific meetup
         """
-        question_id = [id for id in meetupdata if id['id'] == id ]
-        if question_id:
-            meetup_detail =  meetupmodel.get_specific_meeetup(id)
-            return make_response(jsonify({"message":meetup_detail}),200)
-        return make_response(jsonify({"message":alert}),404)
+        specificmeetup= self.meetup.get_specific_meeetup(str(id))
+        return make_response(jsonify({"message":specificmeetup}),200)
 
 class MeetupRsvp(Resource):
     def __init__(self):

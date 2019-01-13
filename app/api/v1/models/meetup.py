@@ -11,14 +11,12 @@ class MeetUpModels():
     def create_meetup(self, topic, meetup_id, location, date, tag):
         payload = {
             "status": 200,
-            "data" : [ {
-                "topic" : topic,
-                "location" : location ,
-                "happeningOn": date ,
-                "tags" : tag,
-                "id":meetup_id
-            }]
-        }
+            "meetup_id":meetup_id,
+            "topic" : topic,
+            "location" : location,
+            "happeningOn": date,
+            "tags" : tag
+            }
         add_meetup = self.list.append(payload)
         return self.list
 
@@ -27,8 +25,10 @@ class MeetUpModels():
         return upcoming_meetups
     
     def get_specific_meeetup(self,id):
-        data = meetuplist
-        return data
+        getmeetup = [meetup for meetup in self.list if meetup['meetup_id']== id]
+        if not getmeetup:
+            return "not"
+        return "true"
 
     def rsvp_meetup(self,meetup_id,topic,status,username):
         payload = {
