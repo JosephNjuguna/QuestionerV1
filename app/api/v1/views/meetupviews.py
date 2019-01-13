@@ -1,11 +1,10 @@
-from flask import Blueprint,jsonify,make_response, request
+from flask import jsonify,make_response, request
 from flask_restful import Resource
 import datetime
 import uuid
 
 from app.api.v1.models.meetup import MeetUpModels, meetuplist
 
-meetup_api = Blueprint('meetup_api',__name__,)
 meetupmodel = MeetUpModels()
 
 meetupdata = meetuplist
