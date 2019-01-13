@@ -1,6 +1,8 @@
 # Don't track content of these folders
 env
+config.py
 misc
+.vscode
 config
 .vscode/
 config.py
