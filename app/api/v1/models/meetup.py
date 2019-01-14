@@ -30,9 +30,8 @@ class MeetUpModels():
             return "not"
         return "true"
 
-    def rsvp_meetup(self,meetup_id,topic,status,username):
+    def rsvp_meetup(self,topic,status,username):
         payload = {
-            "meetup":meetup_id,
             "topic":topic,
             "status": status,
             "user":username

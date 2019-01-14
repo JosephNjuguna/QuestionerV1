@@ -10,7 +10,6 @@ meetupmodel = MeetUpModels()
 meetupdata = meetuplist
 alert = "Id not found"
 empty_alert = "Fields cant be Empty"
-
 class CreateMeetup(Resource):
     def __init__(self):
         self.happeningon = datetime.datetime.utcnow()
@@ -55,20 +54,19 @@ class MeetupRsvp(Resource):
     def __init__(self):
         pass
 
-    def post(self,id):
+    def post(self):
         """
             a user 
             can RSVPS for 
             a specific meetup
         """
         data = request.get_json()
-        meetup_id= id
         topic = data['topic']  
         status = data['status']
         username = data['name']
 
-        if topic == "" or status == ""or username == "" or meetup_id == "":
-            return make_response(jsonify({"message":"Fields cnat be empty"}))
+        if topic == "" or status == ""or username == "":
+            return make_response(jsonify({"message":"Fields cnat be empty"}),400)
 
-        user_rsvp = meetupmodel.rsvp_meetup(meetup_id,topic,status,username)
+        user_rsvp = meetupmodel.rsvp_meetup(topic,status,username)
         return make_response(jsonify({"Successful RSVP TO the MEET UP" : user_rsvp}),201)
