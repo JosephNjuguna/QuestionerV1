@@ -1,8 +1,8 @@
-from app.api.v1.models.questions import questionslist, QuestionClass
+from app.api.v1.models.questions import questions_list, QuestionClass
 from flask import jsonify,make_response,request
 from flask_restful import Resource
 
-questionmodel = QuestionClass()
+questionmodel = QuestionClass(questions_list)
 
 class GetSpecificQuestion(Resource):
 
