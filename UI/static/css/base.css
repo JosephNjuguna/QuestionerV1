@@ -29,9 +29,9 @@ body{
 }
 .start-intro{
     padding: 5%;
-    display: flex;
+    /* display: flex; */
     height: 400px;
-    background-image: url("../static/images/macbook.jpg");
+    background-image: url("../images/macbook.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
