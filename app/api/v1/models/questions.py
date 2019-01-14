@@ -1,8 +1,8 @@
 questions_list= []
 
 class QuestionClass():
-    def __init__(self):
-        self.data = questions_list
+    def __init__(self, q_list):
+        self.data = q_list
 
     def post_question(self, user, meetup, title, body):
         payload = {
