@@ -1,19 +1,18 @@
-from flask import Blueprint, jsonify, make_response, request
+from app.api.v1.models.questions import questionslist, QuestionClass
+from flask import jsonify,make_response,request
 from flask_restful import Resource
-
-from app.api.v1.models.questions import questions_list,QuestionClass
-
-question_api = Blueprint('questions_api',__name__,)
 
 questionmodel = QuestionClass()
 
-@question_api.route('/questions/<string:id>',methods=["GET"])
-def get_question(id):
-    question_specific = questionmodel.get_one_question(id)
-    return make_response(jsonify({"message": question_specific}),200)
+class GetSpecificQuestion(Resource):
 
+    def __init__(self):
+        self.model = questionmodel
+
+    def get(self, id):
+        question_specific = self.model.get_one_question(id)
+        return make_response(jsonify({"message": question_specific}),200)
 class PostQuestion(Resource):
-
     def post(self):
         """
         user can post question api endpoint
@@ -24,7 +23,7 @@ class PostQuestion(Resource):
         title=data['title']
         body=data['body']
 
-        for k,v in data.items():
+        for k in data.items():
             if len(k) == 0:
                 return make_response(jsonify({"message":"Please recheck your data"}))
 
@@ -38,14 +37,8 @@ class UpvoteQuestion(Resource):
     def patch(self, question_id):
         upvote = self.upvotemodel.upvote_question(id= question_id)
         if not upvote:
-            return {
-                "status": 404,
-                "error": "No question found"
-                }, 404
-            return {
-                "status": 200,
-                "data": upvote
-            }, 204
+            return {"status": 404,"error": "No question found"}, 404
+        return {"status": 200,"data": upvote}, 204
 class DownvoteQuestion(Resource):
     def __init__(self):
         self.downvotemodel = questionmodel
@@ -53,11 +46,5 @@ class DownvoteQuestion(Resource):
     def patch(self, question_id):
         downvote = self.downvotemodel.downvote_question(id= question_id)
         if not downvote:
-            return {
-                "status": 404,
-                "error": "No question found"
-                }, 404
-            return {
-                "status": 200,
-                "data": downvote
-            }, 204
+            return {"status": 404, "error": "No question found"}, 404
+        return {"status": 200, "data": downvote}, 204
