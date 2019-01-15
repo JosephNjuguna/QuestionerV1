@@ -8,54 +8,35 @@
     <title>Questioner</title>
 </head>
 <body class="profile">
-        <nav id="navbar-items">
+        <nav class="navbar-items">
             <p id="nav-left">Questioner</p>
-            <li id="nav-right"><a href="#meetupcategories">Log Out</a></li>
-            <li id="nav-right"><a href="#meetupcategories">MeetUp Categories</a></li>
-            <li id="nav-right"><a href="#">Popular Meetups</a> </li>
-            <li id="nav-right"><a href="./dashboard.html">Home</a> </li>
-            <li id="nav-right">Search</li>
-            <input  id="nav-right" type="text" placeholder="Search previous meetup you have attended before here...">
+            <p  class="nav-right"><a href="#">About Us</a></p>
+            <p  class="nav-right"><a href="./dashboard.html">Home</a></p>
+            <p  class="nav-right"><a href="#">Profile setting</a></p> 
         </nav>
-        <div id="profile-body">
-            <div id="user-information">
-                <img id="info-image" src="../static/images/one.png" alt=" user image">
-                <p id="info-name">username : Alan</p>
-                <p id="info-email">email: alan@mail.com</p>
-                <button id="info-button">  Edit Profile</button>
-                <button id="info-button"><a href="#popularquestion">Popular Questions</a></button>
-                <button id="info-button"><a href="#askedquestion">Questions I asked</a></button>
-                <button id="info-button"><a href="#questionscommented">Questions I Commented</a></button>
-                <hr>
-                <div id="profile-meetup-suggestions">
-                        <div>
-                            <p><b>MeetUps that may Intrest You:</b></p>
-                            <p>Android kenya</p>
-                            <p>Kenya farmers</p>
-                            <p>Coffee Brokers</p>
-                            <p>NSE thanksgiving</p>
-                            <p>Android kenya</p>
-                            <p>Kenya farmers</p>
-                            <p>Coffee Brokers</p>
-                            <p>NSE thanksgiving</p> <p>Android kenya</p>
-                            <p>Kenya farmers</p>
-                            <p>Coffee Brokers</p>
-                            <p>NSE thanksgiving</p> <p>Android kenya</p>
-                            <p>Kenya farmers</p>
-                            <p>Coffee Brokers</p>             
-                            >
-                        </div>
+        <div class="profile-body">
+            <div class="user-information">
+                <div class="user-image">
+                    <img id="info-image" src="../static/images/one.png" alt=" user image">
+                </div>
+                <div class="user-detail">
+                    <p id="info-name">username : Alan</p>
+                    <p id="info-email">email:alan@gmail.com</p>
+                    <button id="info-button">  Edit Profile</button>
+                    <button id="info-button"><a href="#popularquestion">Popular Questions</a></button>
+                    <button id="info-button"><a href="#askedquestion">Questions I asked</a></button>
+                    <button id="info-button"><a href="#questionscommented">Questions I Commented</a></button>
                 </div>
             </div> 
-            <div id="profile-questions">
+            <div class="profile-questions">
                     <!--allows user to access different part of the page without scrolling much-->
-                    <div id="control-body">
-                        <a id="profile-control" href="#popularquestion">Popular Questions Feed <button>3</button></a>
-                        <a id="profile-control" href="#askedquestion">Questions asked by Me<button>2</button></a>
-                        <a id="profile-control" href="#questionscommented">Questions I Commented<button>1</button></a>
+                    <div class="control-body">
+                        <a id="profile-control" href="#1">Popular Questions Feed <button>3</button></a>
+                        <a id="profile-control" href="#2">Questions asked by Me<button>2</button></a>
+                        <a id="profile-control" href="#3">Questions I Commented<button>1</button></a>
                     </div>
                     <!--popular questions on specific meetups-->
-                    <div id="popularquestion">
+                    <div class="popularquestion" id="1">
                         <p id="hints">Popular Questions on meetup i will attend <button>3</button></p>
                         <div>
                             <p> <b>Firebase Meetup Kenya</b>: happening on Thursday 10 Jan 2018 at UoN Towers</p>
@@ -66,27 +47,30 @@
                             <button id="popular-feed">comment</button>
                             <button id="popular-feed">view comments</button>
                         </div>
+                        <hr>
+
                         <div>
-                                <p> <b>Firebase Meetup Kenya</b>: happening on Thursday 10 Jan 2018 at UoN Towers</p>
-                                <p><b><h2>2.</h2></b>Will there be provision of Tshirts??</p>
-                                <p class="feed-time">posted by <b>Waster</b> on Monday 13:16:09pm</p>
-                                <button id="popular-feed">Upvote 105 </button>
-                                <button id="popular-feed">Downvote 63</button>
-                                <button id="popular-feed">comment</button>
-                                <button id="popular-feed">view comments</button>
-                            </div>
-                            <div>
-                                    <p> <b>Firebase Meetup Kenya</b>: happening on Thursday 10 Jan 2018 at UoN Towers</p>
-                                    <p><b><h2>3.</h2></b>Will top Winners will be rewarded??</p>
-                                    <p class="feed-time">posted by <b>Alan Wlaker</b> on Monday 13:16:09pm</p>
-                                    <button id="popular-feed">Upvote 125 </button>
-                                    <button id="popular-feed">Downvote 63</button>
-                                    <button id="popular-feed">comment</button>
-                                    <button id="popular-feed">view comments</button>
-                                </div>
+                            <p> <b>Firebase Meetup Kenya</b>: happening on Thursday 10 Jan 2018 at UoN Towers</p>
+                            <p><b><h2>2.</h2></b>Will there be provision of Tshirts??</p>
+                            <p class="feed-time">posted by <b>Waster</b> on Monday 13:16:09pm</p>
+                            <button id="popular-feed">Upvote 105 </button>
+                            <button id="popular-feed">Downvote 63</button>
+                            <button id="popular-feed">comment</button>
+                            <button id="popular-feed">view comments</button>
+                        </div>
+                        <hr>
+                        <div>
+                            <p> <b>Firebase Meetup Kenya</b>: happening on Thursday 10 Jan 2018 at UoN Towers</p>
+                            <p><b><h2>3.</h2></b>Will top Winners will be rewarded??</p>
+                            <p class="feed-time">posted by <b>Alan Wlaker</b> on Monday 13:16:09pm</p>
+                            <button id="popular-feed">Upvote 125 </button>
+                            <button id="popular-feed">Downvote 63</button>
+                            <button id="popular-feed">comment</button>
+                            <button id="popular-feed">view comments</button>
+                        </div>
                     </div>
                     <!--questions users asked-->
-                    <div id="askedquestions">
+                    <div class="askedquestions" id="2">
                         <p id="hints">Questions i asked <button>2</button></p>
                         <div>
                             <p> <b>Firebase Meetup Kenya</b>: happening on Thursday 10 Jan 2018 at UoN Towers</p>
@@ -97,6 +81,8 @@
                             <button id="popular-feed">comment</button>
                             <button id="popular-feed">view comments</button>
                         </div>
+                        <hr>
+
                         <div>
                             <p> <b>FoodLovers Kenya</b>: happening on Thursday 10 Jan 2018 at UoN Towers</p>
                             <p><b><h2>2.</h2></b> When will Food Blog Registration take place??</p>
@@ -108,7 +94,7 @@
                         </div>
                     </div>
                     <!--questions that user commented on-->
-                    <div  id="questionscommented">
+                    <div  class="questionscommented" id="3">
                         <p id="hints">Question I commented <button>1</button></p>
                         <p> <b>Firebase Meetup Kenya</b>: happening on Thursday 10 Jan 2018 at UoN Towers</p>
                         <p><b><h2>1.</h2></b> How much will it cost to register new users??</p>
@@ -119,30 +105,27 @@
                         <button id="popular-feed">view comments</button>
                     </div>
             </div>
-            <footer id="questioner-info">
-                    <div id="questioner-contact">
+            <footer class="questioner-info">
+                    <div class="questioner-contact">
                         <p><b>Questioner</b></p>
                         <p>location:</p>
                         <p>Kenya, Nairobi</p>
                         <p>P.O Box 23435-5546</p>
         
                     </div>
-                    <div id="questioner-contact">
+                    <div class="questioner-contact">
                         <p><b>Contact info</b></p>
                         <p>questioner@mail.com</p>
                         <p>phone number :07123456987 </p>
                         <p>Reach us at instagram: @meetup</p>
         
                     </div>
-                    <div id="questioner-contact">
+                    <div class="questioner-contact">
                         <p><b>Questioner mission and values</b></p>
                         <p>Connect People of same Intrest</p>
                         <p>Create Memorable Meetups</p>
                         <p>Build the Best Public Relations</p>
                     </div>
-                    <br>
-                    <p>Questioner</p>
-                    <p>2019</p>
             </footer>
         </div>
 </body>

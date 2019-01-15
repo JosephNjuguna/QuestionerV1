@@ -1,505 +1,390 @@
 body{
-    background-color: blue;
     margin: 0;
-    color:white;
-    font-family: sans-serif;
-    font-size: 16px;
+    padding: 0;
+    height: 100%;
 }
-/*a base code */
 a{
-    color: white;
     text-decoration: none;
 }
-/*div base code*/
-div{
-    width: auto;
-    height: auto;
+.container{
+    display: flex;
+    margin:0px;
+    padding: 0px;
+    min-height: 100%;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
-/*base navbar code*/
-nav{
-    height: 50px;
-    background-color: rgba(0,0,0,0.5);
-    padding-bottom: 10px;
-    padding-top: 10px;
-    width:auto;
-    margin: 0;
+
+.navbar-items{
+    flex: 1;
+    display: flex;
+    background-color: black;
 }
-/*base button code*/
-button{
+.nav-left{
+    color: white;
+    flex: 1;
+    display: flex-start;
+}
+.nav-right{
+    color: white;
+}
+.nav-right a{
+    color: white;
+    text-decoration: none;
+    flex: 1;
+    float: right;
+    margin-right: 15px;
+    border-color: white;
+    border-style: groove;
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 4px;
+}
+.start-intro{
+    padding: 5%;
+    display: flex; 
+    height: 400px;
+    background-image: url("../images/macbook.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.start-intro .name {
+    flex: 1;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+.start-intro .mini-start{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.start-intro .mini-start .mini-start2 a{
+    color: white;
+    text-decoration: none;
+ }
+ 
+.start-intro .mini-start .mini-start2 .start-button{
+   background-color: white;
+   color: black;
+   border-radius: 5px;
+   border-color: white;
+   border-style: groove;
+   background-color: rgba(0,0,0);
+   padding:10px;
+}
+.questioner-info{
+    display: flex;
+    bottom:0;
+    justify-self: auto;
+    margin-top:2%; 
+    width: 100%;
+    background-color:black;
+    color: white; 
+}
+.questioner-info .questioner-contact{
+    flex: 1;
+    width:33%;
+    display: rst
+}
+.questioner-info .questioner-copyright{
+    flex: 1;
+}
+/* authentication input*/
+.details-input{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+    height: 100%;
+}
+.details-input form{
+    padding: 10px;
+    box-shadow: 5px;
+}
+.details-input input{
+    flex: 1;
+    width: 350px;
+    margin: auto;
+    padding: 10px;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+.details-input a{
+   color: red;
+}
+.details-input .submit-button{
+    flex: 1;
+    align-self: center;
     border-radius: 5px;
     border-style: groove;
-    display: inline-block;
-    background-color: rgba(0,0,0,0.5);
+    margin-top: 2%;
+    margin-left: 35%;
+    width:auto;
+    height: auto;
+    padding: 8px;
+    color: black;
+    text-align: center;
+    border-style: groove;
+    border-radius: 6px;
+    border-color: black;
+    border-width:2px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+.details-input .link{
+    color: blue;
+    font-style: oblique;
+
+}
+.details-input a{
+    color: black;
+    text-decoration: none;
+}
+/*dashboard*/
+.meetup-body{
+    display: flex;
+}
+.meetup-body .meetup-view{
+    padding: 10px;
+    border-color:black;
+    border-style: groove;
+    border-width:1px;
+    margin: 10px;
+    width: 30%;
+
+}
+.meetup-body .meetup-view img{
+   width: 100%;
+}
+/*meetup detail*/
+.meetup-detail .meetup-info{
+    display: flex;
+    padding: 10px;
+    border-color:black;
+    border-style: groove;
+    border-width: 2px;
+    width: 90%;
+    margin:3%;
+}
+.meetup-detail .meetup-info .image{
+    flex: 1;
+    padding: 10px;
+}
+.meetup-detail .meetup-info .image img{
+    flex: 1;
+    height: 100%;
+}
+.meetup-detail .meetup-info .detail{
+    flex: 1;
+    padding: 10px;
+}
+.meetup-detail .meetup-info .detail button{
+    border-radius: 5px;
+    border-style: groove;
     margin-top: 2%;
     width:30%;
     height: auto;
     padding: 8px;
-    color: white;
+    color: black;
     text-align: center;
     border-style: groove;
     border-radius: 6px;
-    border-width: 1px;
+    border-width:px;
     margin-right: 7px;
-    padding: 10px;
-    width: auto;
     cursor: pointer;
 }
-/*form base  code*/
-form{
-    border: none;
-    border-color: white;
+.meetup-detail .post-comment{
+    border-color:black;
     border-style: groove;
-    border-width: 1px;
-    border-radius: 16px;
-    padding: 20px;
-    display: inline-block;
-}
-/*input base code*/
-input{
-    color: white;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px;
-    border-style: groove;
-    border-radius: 6px;
-    border-width: 1px;
-    margin-right: 7px;
-    padding: 4px;
-    background-color: rgba(0,0,0,0.5);
-}
-/* base list code*/
-li {
-    display: inline;
-    float: right;
-    padding: 6px;
-    margin-right: 7px;
-    margin-left: 3px;
-    border-color: white;
-    border-style: groove;
-    border-radius: 4px;
-    border-width: 1px;
-    cursor: pointer;
-}
-/*base footer code*/
-footer{
-    text-align: center; 
-    padding: 10px;
-    margin:0;
-    width: auto;
-    height:250px;
-}
-/*base textarea code*/
-textarea{
-    width: 70%;
-    height: 70px;
-    padding: 7px;
-    background-color: rgba(0,0,0,0.5);
-    color:white;
-}
-/*base h4 code*/
- h4{
-    padding: 0;
-    margin: 2px;
-}
-/*base i code*/
-i{
-    padding: 0;
-    margin: 2px;
-}
-#nav-right{
-    border-style: groove;
-    border-radius: 4px;
-    border-width: 1px;
-    float: right;
-}
-#navbar-items input {
-   padding: 10px;
-   height: 15px;
-   width: 30%;
-   margin: 0;
-}
-#nav-left {
-    float: left;
-    font-size: 18px;
-    padding-left:16px;
-    text-decoration: underline;
-}
-#questioner-contact{
-    width: 32%;
-    margin: 1px;
-    padding: 4px;
-    float: left;
-    background-color: rgba(0,0,0,0.5);
-    border-color: white;
-    border-style: groove;
-    border-top-width: 0px;
-    border-left-width: 0px;
-    border-right-width: 1px;
-    border-bottom-width: 0px;
-}
-#hint{
-    padding:0;
-    margin: 0;
-    float: none;
-    margin: 1px;
-    padding: 0;
-}
-#link {
-    cursor: pointer;
-    color: red;
-}
-#auth-input{
-    border-color: white;
-    border-style: groove;
-    border-width: 1px;
-    border-radius: 16px;
-    padding: 20px;
-    display: inline-block;
-}
-#details-input {
-    width: auto;
-    margin:3%;
-    padding: 20px;
-}
-#input{
-    height: 20px;
-    display: inline;
-    width: 70%;
-    height: 35px;
-    padding: 6px;
-    color: white;
-    font-size: 16px;
-    text-align: center;
-    border-color: white;
-    border-style: groove;
-    border-width: 0px;
-    border-radius: 5px;   
-    background-color: rgba(0,0,0,0.5);
-}
-#submit-button{
-    float: none;
-    width: 30%;
-}
-/*posting question text area div */
-.post-question #post-area{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    display: block;
-    margin: 2%;
-}
-.post-question #post{
-   padding: 4px;
-   margin-top: 2%;
-   margin-bottom: 2%;
-}
-.post-question #quiz-post{
-    float: right;
-}
-.post-question #popular-questions{
-    width: auto;
-    height: auto;
-    border-style: groove;
-    border-radius: 4px;
     border-width: 2px;
-    padding: 2px;
+    width: 90%;
+    padding: 4px;
+    margin:0% 3% 2% 3%;
 }
-.post-question #timeline{
-    width: auto;
+.meetup-detail .post-comment button{
+    border-radius: 5px;
+    margin-top: 2%;
+    width:auto;
     height: auto;
-    display: inline;
-    padding: 2px;
-}
-.post-question #question-additions{
-    width: auto;
-    height: auto;
-    display: inline;
-    margin: 9px;
     padding: 8px;
+    color: black;
+    text-align: center;
     border-style: groove;
-    border-radius: 4px;
-    border-width: 1px;
+    border-radius: 6px;
+    border-color: black;
+    background-color: white;
+    border-width: 2px;
+    margin-right: 7px;
+    cursor: pointer;
 }
-/*meetup details*/
-.meetup-detail #meetup-info{
-    width: auto;
-    height: auto;
-    display: inline;
-    float: left;
-    padding-left: 100px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+.meetup-detail .post-comment .popular-questions{
+    background-color: grey;
+    padding: 10px;
+    color: white;
+    border-radius: 6px;
 }
-.meetup-detail #post-comment{
-    width: auto;
+.meetup-detail .post-comment .popular-questions .post textarea{
+    width: 90%;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.post-area{
+    padding: 10px;    border-radius: 5px;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 500px;;
+}
+.post-area textarea{
+    width: 90%;
+    height:30%;
+    margin: 5px;
+    flex: 1;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    font-size: 16px;
+}
+.post-area button{
+    margin-top: 2%;
+    width:auto;
     height: auto;
-    display: inline;
-    float: left;
-    padding-left: 100px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding: 8px;
+    color: black;
+    text-align: center;
     border-style: groove;
-    border-radius: 4px;
-    border-width: 1px;
-    margin: 3px;
+    border-radius: 6px;
+    border-color: black;
+    border-width:2px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+/*profile*/
+.profile-body .user-information{
+    display: flex;
+    justify-items: center;
+    flex-direction: row;
+    padding-left: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 
 }
-.meetup-detail #post{
-    width:auto;
-    display: inline;
-}
-.meetup-detail #post button{
-    float: right;
-    cursor: pointer;
-    margin: 0;
-}
-.meetup-detail #post textarea{
-    width:60%;
-}
-.meetup-detail #details{
-    width: 75%;
-    float: left;
+.profile-body .user-information .user-detail{
     padding: 10px;
-    text-align: center;
-    border-radius: 4px;
-    background-color: rgba(0,0,0,0.5);
 }
-.meetup-detail #others{
-    display: inline;
-    float: right;
-    text-decoration: underline;
-    border-radius: 4px;
-    width: 18%;
-    text-align: center;
-    border-radius: 4px;
-    margin-left: 2px;
-    background-color: rgba(0,0,0,0.5);
-}
-.meetup-detail #meetup-description-info{
-  margin: 3px;
-  padding: 6px;
-}
-.meetup-detail #quiz-header{
-    margin: 5px;
-    padding: 4px;
-    font-size: 32px;
-    float: none;
-}
-.meetup-detail #question{
-    padding:25px;
-    width: auto;
-    margin: 25px;
-    border-radius: 4px;
-    background-color: rgba(0,0,0,0.5);
-}
-.meetup-detail #comment-header{
-    text-align: center;
-}
-.meetup-detail #question-id{
-    padding:5px;
-}
-.meetup-detail #question-additions{
+.profile-body .user-information .user-detail button{
     border-radius: 5px;
-    background-color: rgb(6, 6, 94);
-    display: inline;
-    margin: 4px;
     border-style: groove;
-    width: auto;
-    height: 40px;
-    padding: 4px;
-    color: white;
-    text-align: center;
-    float: left;
-}
-.meetup-detail #voting {
-    padding: 0;
-    margin: 0;
-}
-.meetup-detail #comments {
-    width: auto;
-    padding-left:25px;
-}
-.meetup-detail #question-comment{
-    border-radius: 5px;
-    margin: 10px;
-    background-color: rgb(6, 6, 94);
-    border-style: groove;
-    padding: 4px;
-    color: white;
-    border-style: groove;
-    border-bottom-width: 0px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
-    border-width: 2px;
+    margin-top: 2%;
+    width:auto;
+    height: auto;
     padding: 8px;
-    color: white;
-    height: auto;
-    width: 60%
-}
-.meetup-detail #comment-link{
-    border-radius: 5px;
-    margin: 2px;
-    background-color: white;
-    border-style: groove;
-    border-color:black;
-    border-radius: 4px;
-    border-width: 1px;
-    width: auto;
-    height: auto;
-    padding: 6px;
     color: black;
-}
-.meetup-detail #post-comment{
-    display: inline;
-}
-.meetup-detail #time{
-    display: inline;
-}
-/*index*/
-.index #start-intro {
-    width: auto;
-    height: 300px;
-    padding: 55px;
-}
-.index #questioner-header{
-    width: auto;
-    padding: 15px;
-}
-.index #name{
-    height:auto;
-    width: 50%;
-    float: left;
-    font-size: 45px;
     text-align: center;
-    color: white;
-    background-color: blue
-}
-.index #mini-start  {    
-    padding: 10px;
-    height:auto;
-    width: 40%;
-    float: right;
-    background-color: blue; 
-}
-/*meetup body*/
-.dashboard-body #meetup-body{
-    width:auto;
-    height:500px;
-}
-.dashboard-body #meetup-view{
-    height: 400px;
-    width: 300px;
-    float: left;
-    display: inline;
-    padding: 6px;
-    margin-top:2%;
-    margin-left:7%;
-    background: rgb(6, 6, 94);
-    border-radius: 6px;
-}
-.dashboard-body #meeting-details{
-    height:auto;
-}
-.dashboard-body #meetup-view img{
-    height: 200px;
-    width: 300px;
-    margin: 0;
-}
-/*profile page code*/
-.profile #info-button{
-    height: auto;
-    width: auto;
-    padding: 6px;
-    margin: 4px;
-    color: white;
     border-style: groove;
     border-radius: 6px;
-    border-width: 1px;
-    background-color: rgba(0,0,0,0.5)
-}
-/*user information*/
-.profile #user-information{
-    width:15%;
-    padding: 0;
-    height: 100%;
-    float: left;
-    border-style:groove;
-    border-radius: 4px;
-    border-width: 2px;
-    padding: 2px;
-    height: auto;
-    float: left;
-    margin: 0.5%;
-}
-/*questions body*/
-.profile #profile-questions{
-    width:80%;
-    padding: 0;
-    height:auto;
-    float: left;
-    margin: 1%;
-}
-/*meet up suggestions*/
-.profile  #profile-meetup-suggestions{
-    text-align: center;
-    text-decoration: underline;
+    border-width:px;
+    margin-right: 7px;
     cursor: pointer;
 }
-.profile #info-image{
-    padding:0px;
-    width:100px;
-    height:100px;
-    margin-left: 15%;
-    margin-top: 15%;
-    border-style:groove;
-    border-radius:60px;
-    border-width: 2px;
+.profile-body .profile-questions .control-body{
+    padding: 4px;
+    margin: 2px;
+    flex: 1;
 }
-.profile #info-name{
-    padding:6px;
-    width: auto;
-    height: 25%;
-    border-style:groove;
-    border-radius: 4px;
-    border-width: 2px;
+.profile-body .profile-questions .control-body a{
+   color: black;
+   margin-right: 10%;
+   padding-left: 6%; 
 }
-.profile #info-email{
-    padding:6px;
-    width: auto;
-    height: 25%;
-    border-style:groove;
-    border-radius: 5px;
-    border-width: 2px;
-}
-/*question information belonging to user*/
-.profile #profile-control {
-    width: auto;
-    border-style: groove;
-    border-radius: 4px;
-    border-width: 1px;
-    padding: 12px;
-    text-align: center;
+.profile-body .profile-questions .control-body button{
+    color: black;
     margin: 3px;
-}
-.profile #popularquestion{
-    padding: 8px;
-    margin: 4px;
-    height: auto;
+    border-radius: 40px;
     border-style: groove;
-    border-width:1px;
-    border-radius: 4px;
-} 
-.profile #askedquestions {
-    padding: 8px;
-    height: auto;
+ }
+.profile-body .profile-questions .popularquestion{
+    padding: 6px;
+    margin:2% 5% 2% 5%;
+    flex: 1;
     border-style: groove;
-    border-width:1px;
-    border-radius: 4px;
+    border-color: black;
+    border-width: 2px;
+    border-radius:6px;
 }
-.profile #questionscommented {
-    padding: 8px;
-    height: auto;
+.profile-body .profile-questions .popularquestion button{
+    color: black;
+    margin: 3px;
+    border-radius: 40px;
     border-style: groove;
-    border-width:1px;
-    border-radius: 4px;
+    padding:6px;
 }
+.profile-body .profile-questions .askedquestions{
+    padding: 6px;
+    margin:2% 5% 2% 5%;
+    flex: 1;
+    border-style: groove;
+    border-color: black;
+    border-width: 2px;
+    border-radius:6px;
+}
+.profile-body .profile-questions .askedquestions button{
+    color: black;
+    margin: 6px;
+    border-radius: 40px;
+    border-style: groove;
+    padding:6px;
+ }
+.profile-body .profile-questions .questionscommented{
+    padding: 6px;
+    margin:2% 5% 2% 5%;
+    flex: 1;
+    border-style: groove;
+    border-color: black;
+    border-width: 2px;
+    border-radius:6px;
+}
+.profile-body .profile-questions .questionscommented button{
+    color: black;
+    margin: 3px;
+    border-radius: 40px;
+    border-style: groove;
+    padding:6px;
+ }
+
+ @media screen and (max-width:500px){
+    .meetup-body{
+        display: flex;
+        flex-direction: column;
+    }
+    .meetup-body .meetup-view{
+        padding: 10px;
+        border-color:black;
+        border-style: groove;
+        border-width:1px;
+        margin: 10px;
+        width: 96%;
+    }
+ }
+ @media screen and (max-width:600px){
+    .meetup-body{
+        display: flex;
+        flex-direction: column;
+    }
+    .meetup-body .meetup-view{
+        padding: 10px;
+        border-color:black;
+        border-style: groove;
+        border-width:1px;
+        margin: 10px;
+        width: 96%;
+    }
+ }

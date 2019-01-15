@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <title>Questioner</title>
+</head>
+<body>
+            <nav id="navbar-items">
+                <p  id="nav-left">Questioner-Admin</p>
+                <li id="nav-right"><a href="./admininfo">Info</a> </li>
+                <li id="nav-right"><a href="#">log out</a> </li>
+                <li id="nav-right"><a href="./adminviewmeetup.html">View all meetups</a></li>
+            </nav>
+            <div id="details-input" align='center'>
+                    <h2>Create a  Meetup</h2>
+                    <form id="auth-input" action="signup.html" method="POST">
+                        <p id="hint">Enter Meetup title</p>
+                        <input id="input" type="text" placeholder="enter title">
+                        
+                        <p id="hint">Enter desciption</p>
+                        <input id="input" type="text" placeholder="enter desciption of meetup...">
+                        
+                        <p id="hint">Enter venue</p>
+                        <input id="input" type="text" placeholder="enter venue of meetup">
+                        
+                        <p id="hint">Hosted by:</p>
+                        <input id="input" type="text" placeholder="enter hosted by ...">
+
+                        <p id="hint">Contact info:</p>
+                                <input id="input" type="text" placeholder="enter contact info of the hoster...">
+                                
+                        <button id="submit-button"> <a href="#create">Create Meetup</a> </button>
+                    </form>
+                </div>
+</body>
+</html>

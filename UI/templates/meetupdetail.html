@@ -8,17 +8,18 @@
     <title>Questioner</title>
 </head>
 <body class="meetup-detail">
-        <nav id="navbar-items">
-            <p id="nav-left">Questioner</p>
-            <li id="nav-right"> <a href="#">popular Meetups</a> </li>
-            <li id="nav-right"> <a href="#"> About Questioner</a></li>
-            <li id="nav-right"><a href="./profile.html">Profile</a> </li>
-            <li id="nav-right">Search</li>
-            <input id="nav-right"  class="right" type="text" placeholder="Search any meetup here e.g food meetups,sports...">
+    <div class="container">
+        <nav class="navbar-items">
+            <p class="nav-left">Questioner</p>
+            <p  class="nav-right"><a href="./profile.html">Profile</a></p>
+            <p  class="nav-right"><a href="./dashboard.html">Home</a></p>
+            <p  class="nav-right"><a href="./postquestion.html">Post Question</a></p>
         </nav>
-        <div id="meetup-info">
-            <div id="details">
-                <img src="/UI/static/images/game.jpeg" alt="">
+        <div class="meetup-info">
+            <div class="image">
+                <img src="../static/images/game.jpeg" alt="meetup image">
+            </div>
+            <div class="detail">
                 <p id="meetup-description-info"> <b>Meetup Name : </b> Video Game Lovers</p>
                 <p id="meetup-description-info"> <b>Reason to Attend : </b> learn how to earrn by playing videos online</p>
                 <p id="meetup-description-info"> <b>Meet Up Description : </b>Best gamers in the country will convine together and advice other gamers how tp make the most by playing video games</p>
@@ -29,90 +30,46 @@
                 <button id="meetup-more">Share</button>
                 <button id="meetup-more"><a href="./postquestion.html">Ask Question</a></button>
             </div>
-            <div id="others">
-                        <div id="meetups">
-                            <p>Meets Ups based <br> on your Interest:</p>
-                            <p>Android kenya</p>
-                            <p>Coffee Brokers</p>
-                            <p>NSE thanksgiving</p> 
-                            <p>Android kenya</p>
-                            <p>Kenya farmers</p>
-                            <p>Coffee Brokers</p>  
-                            <p>Kenya farmers</p>
-                            <p>Coffee Brokers</p>  
-                            <p>Kenya farmers</p><p>Android kenya</p>
-                            <p>Kenya farmers</p>
-                            <p>Coffee Brokers</p>  
-                            <p>Android kenya</p>
-                            <p>Kenya farmers</p>
-                            <p>Kenya farmers</p>
-                            <p>Coffee Brokers</p>
-                        </div>
-            </div>
         </div>
-        <div id="post-comment">
-                <h4>Food lovers : meeting on Mon 1/1/2019 at 10:00am at Ankara Grill : Agenda :Blog Award</h3>
-                <i>Be free to comment on any Questions</i>
+        <!---->
+        <div class="post-comment">
                 <h3>Food lovers : Popular Questions</h3>
-                <div id="popular-questions">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur id consequatur modi animi fugit rem architecto inventore nostrum similique laborum nihil dicta neque libero, totam ipsum dolor a voluptas tenetur?</p>
+                <div class="popular-questions">
+                    <p>When will Food Blog Registration take place??</p>
                     <p id="timeline">posted by :Alan</p>
                     <p id="timeline"> on : Thurday 14/1/2019</p>
                     <div>
                         <button id="question-additions">Upvote(88)</button>
-                        <button id="question-additions">Downvote(6)</button>
+                        <button id="question-additions">Downvote(16)</button>
                         <button id="question-additions">View Comments</button>
                     </div>
-                    <div id="post">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="enter your comment here"></textarea>
-                            <button id="coment-post"> post comment</button>
+                    <div class="post">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="enter your comment here"></textarea>
+                        <button id="coment-post"> post comment</button>
                     </div>
-            </div>
-        </div>
-        <div id="post-comment">
-                <h4>Food lovers : meeting on Mon 1/1/2019 at 10:00am at Ankara Grill : Agenda :Blog Award</h3>
-                <i>Be free to comment on any Questions</i>
-                <h3>Food lovers : Popular Questions</h3>
-                <div id="popular-questions">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur id consequatur modi animi fugit rem architecto inventore nostrum similique laborum nihil dicta neque libero, totam ipsum dolor a voluptas tenetur?</p>
-                    <p id="timeline">posted by :Alan</p>
-                    <p id="timeline"> on : Thurday 14/1/2019</p>
-                    <div>
-                        <button id="question-additions">Upvote(88)</button>
-                        <button id="question-additions">Downvote(6)</button>
-                        <button id="question-additions">View Comments</button>
-                    </div>
-                    <div id="post">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="enter your comment here"></textarea>
-                            <button id="coment-post"> post comment</button>
-                    </div>
-            </div>
-        </div>  
+                </div>
+        </div> 
         <!-- #questioner footer -->
-        <footer id="questioner-info">
-                <div id="questioner-contact">
-                    <p><b>Questioner</b></p>
-                    <p>location:</p>
-                    <p>Kenya, Nairobi</p>
-                    <p>P.O Box 23435-5546</p>
-    
-                </div>
-                <div id="questioner-contact">
-                    <p><b>Contact info</b></p>
-                    <p>questioner@mail.com</p>
-                    <p>phone number :07123456987 </p>
-                    <p>Reach us at instagram: @meetup</p>
-    
-                </div>
-                <div id="questioner-contact">
-                    <p><b>Questioner mission and values</b></p>
-                    <p>Connect People of same Intrest</p>
-                    <p>Create Memorable Meetups</p>
-                    <p>Build the Best Public Relations</p>
-                </div>
-                <br>
-                <p>Questioner</p>
-                <p>2019</p>
+        <footer class="questioner-info">
+            <div class="questioner-contact">
+                <p><b>Questioner</b></p>
+                <p>location:</p>
+                <p>Kenya, Nairobi</p>
+                <p>P.O Box 23435-5546</p>
+            </div>
+            <div class="questioner-contact">
+                <p><b>Contact info</b></p>
+                <p>questioner@mail.com</p>
+                <p>phone number :07123456987 </p>
+                <p>Reach us at instagram: @meetup</p>
+            </div>
+            <div class="questioner-contact">
+                <p><b>Questioner mission and values</b></p>
+                <p>Connect People of same Intrest</p>
+                <p>Create Memorable Meetups</p>
+                <p>Build the Best Public Relations</p>
+            </div>
         </footer>
+    </div>
 </body>
 </html>
