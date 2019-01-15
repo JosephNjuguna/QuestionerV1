@@ -79,6 +79,8 @@ a{
 .questioner-info{
     display: flex;
     bottom:0;
+    justify-self: auto;
+    margin-top:2%; 
     width: 100%;
     background-color:black;
     color: white; 
@@ -97,6 +99,7 @@ a{
     align-items: center;
     padding: 10px;
     flex-direction: column;
+    height: 100%;
 }
 .details-input form{
     padding: 10px;
@@ -174,10 +177,10 @@ a{
 }
 .meetup-detail .meetup-info .image img{
     flex: 1;
-    padding: 10px;
+    height: 100%;
 }
 .meetup-detail .meetup-info .detail{
-    width: 100%;
+    flex: 1;
     padding: 10px;
 }
 .meetup-detail .meetup-info .detail button{
@@ -196,12 +199,15 @@ a{
     cursor: pointer;
 }
 .meetup-detail .post-comment{
-    padding: 10px;
-    width: auto;
+    border-color:black;
+    border-style: groove;
+    border-width: 2px;
+    width: 90%;
+    padding: 4px;
+    margin:0% 3% 2% 3%;
 }
 .meetup-detail .post-comment button{
     border-radius: 5px;
-    border-style: groove;
     margin-top: 2%;
     width:auto;
     height: auto;
@@ -210,7 +216,9 @@ a{
     text-align: center;
     border-style: groove;
     border-radius: 6px;
-    border-width:px;
+    border-color: black;
+    background-color: white;
+    border-width: 2px;
     margin-right: 7px;
     cursor: pointer;
 }
@@ -228,24 +236,24 @@ a{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 .post-area{
-    padding: 10px;
-    background-color: grey;
-    margin: 5px;
-    border-radius: 5px;
-    color: white;
+    padding: 10px;    border-radius: 5px;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 500px;;
 }
 .post-area textarea{
     width: 90%;
     height:30%;
     margin: 5px;
+    flex: 1;
     border-radius: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 10px;
     font-size: 16px;
 }
 .post-area button{
-    border-radius: 5px;
-    border-style: groove;
     margin-top: 2%;
     width:auto;
     height: auto;
@@ -254,19 +262,16 @@ a{
     text-align: center;
     border-style: groove;
     border-radius: 6px;
-    border-width:px;
+    border-color: black;
+    border-width:2px;
     margin-right: 7px;
     cursor: pointer;
 }
 /*profile*/
 .profile-body .user-information{
     display: flex;
-    justify-content: space-around;
+    justify-items: center;
     flex-direction: row;
-    border-style: groove;
-    border-color: black;
-    border-width: 2px;
-    border-radius:6px;
     padding-left: 10%;
     padding-top: 2%;
     padding-bottom: 2%;
@@ -308,7 +313,7 @@ a{
  }
 .profile-body .profile-questions .popularquestion{
     padding: 6px;
-    margin: 3px;
+    margin:2% 5% 2% 5%;
     flex: 1;
     border-style: groove;
     border-color: black;
@@ -324,7 +329,7 @@ a{
 }
 .profile-body .profile-questions .askedquestions{
     padding: 6px;
-    margin: 3px;
+    margin:2% 5% 2% 5%;
     flex: 1;
     border-style: groove;
     border-color: black;
@@ -333,14 +338,14 @@ a{
 }
 .profile-body .profile-questions .askedquestions button{
     color: black;
-    margin: 3px;
+    margin: 6px;
     border-radius: 40px;
     border-style: groove;
     padding:6px;
  }
 .profile-body .profile-questions .questionscommented{
     padding: 6px;
-    margin: 3px;
+    margin:2% 5% 2% 5%;
     flex: 1;
     border-style: groove;
     border-color: black;
