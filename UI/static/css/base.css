@@ -1,14 +1,20 @@
 body{
     margin: 0;
     padding: 0;
+    height: 100%;
+}
+a{
+    text-decoration: none;
 }
 .container{
     display: flex;
     margin:0px;
     padding: 0px;
+    min-height: 100%;
     flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
+
 .navbar-items{
     flex: 1;
     display: flex;
@@ -21,15 +27,22 @@ body{
 }
 .nav-right{
     color: white;
-    flex: 1;
 }
 .nav-right a{
     color: white;
+    text-decoration: none;
     flex: 1;
+    float: right;
+    margin-right: 15px;
+    border-color: white;
+    border-style: groove;
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 4px;
 }
 .start-intro{
     padding: 5%;
-    /* display: flex; */
+    display: flex; 
     height: 400px;
     background-image: url("../images/macbook.jpg");
     background-position: center center;
@@ -39,11 +52,15 @@ body{
 }
 .start-intro .name {
     flex: 1;
+    font-family: sans-serif;
+    font-size: 30px;
 }
 .start-intro .mini-start{
     display: flex;
     flex: 1;
     flex-direction: column;
+    font-family: sans-serif;
+    font-size: 20px;
 }
 .start-intro .mini-start .mini-start2 a{
     color: white;
@@ -61,6 +78,8 @@ body{
 }
 .questioner-info{
     display: flex;
+    bottom:0;
+    width: 100%;
     background-color:black;
     color: white; 
 }
@@ -82,7 +101,6 @@ body{
 .details-input form{
     padding: 10px;
     box-shadow: 5px;
-    display: block;
 }
 .details-input input{
     flex: 1;
@@ -116,7 +134,7 @@ body{
     cursor: pointer;
 }
 .details-input .link{
-    color: grey;
+    color: blue;
     font-style: oblique;
 
 }
