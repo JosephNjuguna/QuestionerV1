@@ -77,10 +77,10 @@ class Login(Resource):
             result = validation.check_email(email)
             for userdata in result:
                 userpass = userdata["password"]
-            if check_password_hash(userpass, password):
+            if userpass ==  password:
                 return {"status": 200, "message": "Log in success"},200
             return {"message": "Incorrect Password "}, 400
-        
+
         except KeyError:
             return make_response(jsonify({"status": 500, "error": "Expecting a field key"}),500)
 
