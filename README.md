@@ -1,5 +1,6 @@
 # Questioner
- `language : Python`
+
+`language : HTML CSS & Python`
 
 **Badges**
 ---
@@ -94,11 +95,13 @@ you will get to run atleast 12 test for the app
  3. USER CAN DOWNVOTE QUESTION
 
 
-### BUILT WITH:
+### BUILT API WITH:
 >Flask - Python MicroFramework
 
 >Python 3.6
 
+### BUILT UI WITH:
+> HTML and CSS using FLEXBOXES
 
 
 ## API VERSION
