@@ -1,5 +1,6 @@
 # Questioner
- `language : HTML CSS & Python`
+
+`language : HTML CSS & Python`
 
 **Badges**
 ---
@@ -95,14 +96,12 @@ you will get to run atleast 12 test for the app
 
 
 ### BUILT API WITH:
-
 >Flask - Python MicroFramework
 
 >Python 3.6
 
 ### BUILT UI WITH:
 > HTML and CSS using FLEXBOXES
-
 
 
 ## API VERSION
