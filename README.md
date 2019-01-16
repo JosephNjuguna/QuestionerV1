@@ -1,17 +1,5 @@
 # Questioner
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
- `language : Python`
-=======
  `language : HTML CSS & Python`
->>>>>>> parent of 2598544... Merge branch 'develop' into master
-=======
- `language : HTML CSS & Python`
->>>>>>> parent of 2598544... Merge branch 'develop' into master
-=======
- `language : HTML CSS & Python`
->>>>>>> parent of 2598544... Merge branch 'develop' into master
 
 **Badges**
 ---
