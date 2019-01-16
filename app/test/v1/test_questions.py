@@ -27,7 +27,7 @@ class QuestionsTest(unittest.TestCase):
             'body' : ""
         }
         self.question4={
-            'user':1,
+            'user':"",
             'meetup' :None,
             'title' :"Entrance Ticket Price",
             'body' : "How much will be paid by each person for entrance"
@@ -40,22 +40,15 @@ class QuestionsTest(unittest.TestCase):
         }
 
     def test_qood_question_post(self):
-        response = self.app.post('/api/v1/questions', data= json.dumps(self.question1), content_type='application/json')
+        response = self.app.post('/api/v1/meetup/1/question', data= json.dumps(self.question1), content_type='application/json')
         self.assertEqual(response.status_code, 201)
 
     def test_empty_tittle_question_post(self):
-        response = self.app.post('/api/v1/questions', data= json.dumps(self.question2), content_type='application/json')
-        self.assertEqual(response.status_code, 201)
+        response = self.app.post('/api/v1/meetup/1/question', data= json.dumps(self.question2), content_type='application/json')
+        self.assertEqual(response.status_code, 400)
 
     def test_empty_body_question_post(self):
-        response = self.app.post('/api/v1/questions', data= json.dumps(self.question3), content_type='application/json')
-        self.assertEqual(response.status_code, 201)
+        response = self.app.post('/api/v1/meetup/1/question', data= json.dumps(self.question3), content_type='application/json')
+        self.assertEqual(response.status_code, 400)
 
-    def test_empty_meetup_id(self):
-        response = self.app.post('/api/v1/questions', data= json.dumps(self.question4), content_type='application/json')
-        self.assertEqual(response.status_code, 201)
-
-    def test_invalid_user_id(self):
-        response = self.app.post('/api/v1/questions', data= json.dumps(self.question5), content_type='application/json')
-        self.assertEqual(response.status_code, 201)
             
