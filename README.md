@@ -1,5 +1,9 @@
 # Questioner
+<<<<<<< HEAD
  `language : Python`
+=======
+ `language : HTML CSS & Python`
+>>>>>>> parent of 2598544... Merge branch 'develop' into master
 
 **Badges**
 ---
@@ -93,11 +97,12 @@ you will get to run atleast 12 test for the app
  2. USER CAN UPVOTE QUESTION 
  3. USER CAN DOWNVOTE QUESTION
 
+### BUILT API WITH:
 
-### BUILT WITH:
 >Flask - Python MicroFramework
 
 >Python 3.6
+
 
 
 
