@@ -1,4 +1,4 @@
-userslist = []
+users_list = []
 import datetime
 import uuid
 
@@ -12,8 +12,8 @@ class UsersModels():
             "confirmpassword":confirmpassword,
             "registered": datetime.datetime.utcnow(),
             "public_id": str(uuid.uuid4()),
-            "id":len(userslist)+1
+            "id":len(users_list)+1
         }
-        create_payload = userslist.append(payload)
-        return userslist
+        create_payload = users_list.append(payload)
+        return users_list
     

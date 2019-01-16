@@ -5,16 +5,20 @@ import uuid
 import jwt
 import os
 
-from app.api.v1.models.users import userslist
+from app.api.v1.models.users import users_list
+from app.api.v1.models.meetup import meetup_list
+from app.api.v1.models.questions import questions_list 
 
-db = userslist
+db = users_list
+db_meetup = meetup_list
+db_questions = questions_list
 
 class InputValidation():
     """Validators Class"""
   
     def check_state(self,data):
         for k,v in data.items():
-            if k == "" or v== "":
+            if v== "":
                 make_response(jsonify({"status": 400, "error": "empty fields"}), 400)
 
     def valid_name(self, name):
@@ -24,7 +28,7 @@ class InputValidation():
 
     def check_username(self, username):
         """Method for checking if username exist"""
-        user = [user for user in db if user['username'] == username]
+        user = [user for user in db if user['firstname'] == username]
         if user:
             return True
         return False
@@ -45,6 +49,18 @@ class InputValidation():
         regex = "^[a-zA-Z0-9@_+-.]{5,}$"
         return re.match(regex, password)
 
+    def validate_meetup_id(self,id):
+        for i in meetup_list:
+            if i['id'] == id:
+                return True
+        return False
+
+    def validate_question_id(self,id):
+        for i in db_questions:
+            if i['id'] == id:
+                return True
+        return False
+        
     def token_required(self, f):
         @wraps(f)
         def decorated(*args, **kwargs):
