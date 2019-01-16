@@ -1,0 +1,390 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    margin:0px;
+    padding: 0px;
+    min-height: 100%;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.navbar-items{
+    flex: 1;
+    display: flex;
+    background-color: black;
+}
+.nav-left{
+    color: white;
+    flex: 1;
+    display: flex-start;
+}
+.nav-right{
+    color: white;
+}
+.nav-right a{
+    color: white;
+    text-decoration: none;
+    flex: 1;
+    float: right;
+    margin-right: 15px;
+    border-color: white;
+    border-style: groove;
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 4px;
+}
+.start-intro{
+    padding: 5%;
+    display: flex; 
+    height: 400px;
+    background-image: url("../images/macbook.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.start-intro .name {
+    flex: 1;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+.start-intro .mini-start{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.start-intro .mini-start .mini-start2 a{
+    color: white;
+    text-decoration: none;
+ }
+ 
+.start-intro .mini-start .mini-start2 .start-button{
+   background-color: white;
+   color: black;
+   border-radius: 5px;
+   border-color: white;
+   border-style: groove;
+   background-color: rgba(0,0,0);
+   padding:10px;
+}
+.questioner-info{
+    display: flex;
+    bottom:0;
+    justify-self: auto;
+    margin-top:2%; 
+    width: 100%;
+    background-color:black;
+    color: white; 
+}
+.questioner-info .questioner-contact{
+    flex: 1;
+    width:33%;
+    display: rst
+}
+.questioner-info .questioner-copyright{
+    flex: 1;
+}
+/* authentication input*/
+.details-input{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+    height: 100%;
+}
+.details-input form{
+    padding: 10px;
+    box-shadow: 5px;
+}
+.details-input input{
+    flex: 1;
+    width: 350px;
+    margin: auto;
+    padding: 10px;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+.details-input a{
+   color: red;
+}
+.details-input .submit-button{
+    flex: 1;
+    align-self: center;
+    border-radius: 5px;
+    border-style: groove;
+    margin-top: 2%;
+    margin-left: 35%;
+    width:auto;
+    height: auto;
+    padding: 8px;
+    color: black;
+    text-align: center;
+    border-style: groove;
+    border-radius: 6px;
+    border-color: black;
+    border-width:2px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+.details-input .link{
+    color: blue;
+    font-style: oblique;
+
+}
+.details-input a{
+    color: black;
+    text-decoration: none;
+}
+/*dashboard*/
+.meetup-body{
+    display: flex;
+}
+.meetup-body .meetup-view{
+    padding: 10px;
+    border-color:black;
+    border-style: groove;
+    border-width:1px;
+    margin: 10px;
+    width: 30%;
+
+}
+.meetup-body .meetup-view img{
+   width: 100%;
+}
+/*meetup detail*/
+.meetup-detail .meetup-info{
+    display: flex;
+    padding: 10px;
+    border-color:black;
+    border-style: groove;
+    border-width: 2px;
+    width: 90%;
+    margin:3%;
+}
+.meetup-detail .meetup-info .image{
+    flex: 1;
+    padding: 10px;
+}
+.meetup-detail .meetup-info .image img{
+    flex: 1;
+    height: 100%;
+}
+.meetup-detail .meetup-info .detail{
+    flex: 1;
+    padding: 10px;
+}
+.meetup-detail .meetup-info .detail button{
+    border-radius: 5px;
+    border-style: groove;
+    margin-top: 2%;
+    width:30%;
+    height: auto;
+    padding: 8px;
+    color: black;
+    text-align: center;
+    border-style: groove;
+    border-radius: 6px;
+    border-width:px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+.meetup-detail .post-comment{
+    border-color:black;
+    border-style: groove;
+    border-width: 2px;
+    width: 90%;
+    padding: 4px;
+    margin:0% 3% 2% 3%;
+}
+.meetup-detail .post-comment button{
+    border-radius: 5px;
+    margin-top: 2%;
+    width:auto;
+    height: auto;
+    padding: 8px;
+    color: black;
+    text-align: center;
+    border-style: groove;
+    border-radius: 6px;
+    border-color: black;
+    background-color: white;
+    border-width: 2px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+.meetup-detail .post-comment .popular-questions{
+    background-color: grey;
+    padding: 10px;
+    color: white;
+    border-radius: 6px;
+}
+.meetup-detail .post-comment .popular-questions .post textarea{
+    width: 90%;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.post-area{
+    padding: 10px;    border-radius: 5px;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 500px;;
+}
+.post-area textarea{
+    width: 90%;
+    height:30%;
+    margin: 5px;
+    flex: 1;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    font-size: 16px;
+}
+.post-area button{
+    margin-top: 2%;
+    width:auto;
+    height: auto;
+    padding: 8px;
+    color: black;
+    text-align: center;
+    border-style: groove;
+    border-radius: 6px;
+    border-color: black;
+    border-width:2px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+/*profile*/
+.profile-body .user-information{
+    display: flex;
+    justify-items: center;
+    flex-direction: row;
+    padding-left: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+}
+.profile-body .user-information .user-detail{
+    padding: 10px;
+}
+.profile-body .user-information .user-detail button{
+    border-radius: 5px;
+    border-style: groove;
+    margin-top: 2%;
+    width:auto;
+    height: auto;
+    padding: 8px;
+    color: black;
+    text-align: center;
+    border-style: groove;
+    border-radius: 6px;
+    border-width:px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+.profile-body .profile-questions .control-body{
+    padding: 4px;
+    margin: 2px;
+    flex: 1;
+}
+.profile-body .profile-questions .control-body a{
+   color: black;
+   margin-right: 10%;
+   padding-left: 6%; 
+}
+.profile-body .profile-questions .control-body button{
+    color: black;
+    margin: 3px;
+    border-radius: 40px;
+    border-style: groove;
+ }
+.profile-body .profile-questions .popularquestion{
+    padding: 6px;
+    margin:2% 5% 2% 5%;
+    flex: 1;
+    border-style: groove;
+    border-color: black;
+    border-width: 2px;
+    border-radius:6px;
+}
+.profile-body .profile-questions .popularquestion button{
+    color: black;
+    margin: 3px;
+    border-radius: 40px;
+    border-style: groove;
+    padding:6px;
+}
+.profile-body .profile-questions .askedquestions{
+    padding: 6px;
+    margin:2% 5% 2% 5%;
+    flex: 1;
+    border-style: groove;
+    border-color: black;
+    border-width: 2px;
+    border-radius:6px;
+}
+.profile-body .profile-questions .askedquestions button{
+    color: black;
+    margin: 6px;
+    border-radius: 40px;
+    border-style: groove;
+    padding:6px;
+ }
+.profile-body .profile-questions .questionscommented{
+    padding: 6px;
+    margin:2% 5% 2% 5%;
+    flex: 1;
+    border-style: groove;
+    border-color: black;
+    border-width: 2px;
+    border-radius:6px;
+}
+.profile-body .profile-questions .questionscommented button{
+    color: black;
+    margin: 3px;
+    border-radius: 40px;
+    border-style: groove;
+    padding:6px;
+ }
+
+ @media screen and (max-width:500px){
+    .meetup-body{
+        display: flex;
+        flex-direction: column;
+    }
+    .meetup-body .meetup-view{
+        padding: 10px;
+        border-color:black;
+        border-style: groove;
+        border-width:1px;
+        margin: 10px;
+        width: 96%;
+    }
+ }
+ @media screen and (max-width:600px){
+    .meetup-body{
+        display: flex;
+        flex-direction: column;
+    }
+    .meetup-body .meetup-view{
+        padding: 10px;
+        border-color:black;
+        border-style: groove;
+        border-width:1px;
+        margin: 10px;
+        width: 96%;
+    }
+ }
