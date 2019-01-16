@@ -1,7 +1,11 @@
 # Questioner
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  `language : Python`
+=======
+ `language : HTML CSS & Python`
+>>>>>>> parent of 2598544... Merge branch 'develop' into master
 =======
  `language : HTML CSS & Python`
 >>>>>>> parent of 2598544... Merge branch 'develop' into master
@@ -106,6 +110,7 @@ you will get to run atleast 12 test for the app
 >Flask - Python MicroFramework
 
 >Python 3.6
+
 
 
 
