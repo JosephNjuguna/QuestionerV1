@@ -22,6 +22,7 @@ class QuestionClass():
     def get_one_question(self, id):
         """a user should be able to get a single question"""
         question_id = [quiz for quiz in self.data if quiz['id'] == id]
+        print(question_id)
         if not question_id:
             return False
         return question_id
