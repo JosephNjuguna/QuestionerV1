@@ -3,8 +3,6 @@ import json
 
 #local imports
 from app import app
-
-
 class UserTest(unittest.TestCase):
     #setup
     def setUp(self):
@@ -30,11 +28,12 @@ class UserTest(unittest.TestCase):
         }
 #test password and passwordconfirm not matching 400
         self.user4 = {
-            "firstname": 'joe',
+            "firstname": "",
             "lastname": 'alan',
             "email": 'test1@mail.com',
             "password": 'a12njJOSE',
             "confirm_password": 'a12nj'
+           
         }
 #test that email not found 404
         self.user5 = {
@@ -58,18 +57,6 @@ class UserTest(unittest.TestCase):
         response = self.app.post(
             '/api/v1/auth/login', data=json.dumps(self.user2), content_type='application/json')
         self.assertEqual(response.status_code, 200, msg="Log in Successful" )
-
-    def test_3_short_username_sign_up(self):
-        """Test firstname length"""
-        response = self.app.post(
-            '/api/v1/auth/signup', data=json.dumps(self.user4), content_type='application/json')
-        self.assertEqual(response.status_code, 400, msg="Username too short")
-
-    def test_4_invalid_passwords(self):
-        """Test password mismatch"""
-        response = self.app.post(
-            '/api/v1/auth/signup', data=json.dumps(self.user4), content_type='application/json')
-        self.assertEqual(response.status_code, 400, msg = "Password don`t match.Kindly recheck")
 
     def test_5_not_found_email(self):
         """Test email not found"""
