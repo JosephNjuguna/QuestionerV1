@@ -4,7 +4,6 @@ import json
 import unittest
 # local imports
 from app import app
-
 class MeetupTest(unittest.TestCase):
     def setUp(self):
         self.appliaction = app
@@ -77,8 +76,8 @@ class MeetupTest(unittest.TestCase):
     def test_6_empty_key_in_rsvp(self):
         """test user has no key"""
         response = self.app.post(
-            '/api/v1/meetup/1/rsvp', data=json.dumps(self.record1), content_type='application/json')
-        self.assertEqual(response.status_code, 500,
+            '/api/v1/meetup/1/rsvp', data=json.dumps(self.record4), content_type='application/json')
+        self.assertEqual(response.status_code, 400,
                          msg='Ensure that all Keys are Provided in the Data')
 
     def test_7_if_meetup_id_exist(self):

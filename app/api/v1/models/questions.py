@@ -1,28 +1,29 @@
-questions_list= []
+questions_list = []
 
 class QuestionClass():
     def __init__(self, q_list):
         self.data = q_list
 
-    def post_question(self, user, meetup, title, body, public_id,question_id, q_id):
+    def post_question(self, user, meetup, title, body, public_id, question_id, q_id):
         """ a user should be able to post a question"""
         payload = {
-            "user":user,
-            "meetup":meetup,
-            "question_title":title,
+            "user": user,
+            "meetup": meetup,
+            "question_title": title,
             "question_body": body,
-            "id":question_id,
-            "public-id":public_id,
-            "meetup_id":q_id,
-            "votes":0
+            "id": question_id,
+            "public-id": public_id,
+            "meetup_id": q_id,
+            "votes": 0
         }
-        question_data =  self.data.append(payload)
-        return  questions_list
-    
-    def get_one_question(self,id):
+        question_data = self.data.append(payload)
+        return questions_list
+
+    def get_one_question(self, id):
         """a user should be able to get a single question"""
-        question_id = [quiz for quiz in self.data if quiz['id']== id]
-        if not  question_id:
+        question_id = [quiz for quiz in self.data if quiz['id'] == id]
+        print(question_id)
+        if not question_id:
             return False
         return question_id
 
@@ -44,5 +45,5 @@ class QuestionClass():
 
         downvote_votes = self.data[0]["votes"] + 1
         self.data[0]["votes"] = downvote_votes
-        
+
         return "Upvote successful"
