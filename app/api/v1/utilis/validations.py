@@ -4,7 +4,7 @@ import os
 from functools import wraps
 
 # third party modules
-from flask import jsonify, request, make_response
+from flask import jsonify, request, make_response, abort 
 import jwt
 
 # local imports
@@ -23,8 +23,7 @@ class InputValidation():
     def check_state(self, data):
         for k, v in data.items():
             if v == "":
-                make_response(
-                    jsonify({"status": 400, "error": "empty fields"}), 400)
+                return jsonify({"status": 400, "error": "empty fields"}, 400)
 
     def valid_name(self, name):
         """validate username"""
@@ -72,11 +71,11 @@ class InputValidation():
                 return True
         return False
 
-    def validate_question_id(self, id):
+    def validate_question_id(self, quiz_id):
         for i in db_questions:
-            if i['id'] == id:
-                return True
-        return False
+            if i['id'] == quiz_id:
+                return True 
+        return False 
 
     def token_required(self, f):
         @wraps(f)
