@@ -31,27 +31,22 @@ class Signup(Resource):
             confirm_password = data["confirm_password"]
 
             if data["firstname"] == "":
-                abort(make_response(jsonify({"message":"Username empty"}),400))
-
+               return make_response(jsonify({"message":"Username empty"}),400)
             if not validation.valid_name(firstname):
-                return 400
-                #abort(make_response(jsonify({'message': "Username length too short,should be 4 letters or more"}), 400))
+                return make_response(jsonify({'message': "Username length too short,should be 4 letters or more"}), 400)
             check_name = validation.check_username(firstname)
             if check_name:
-                abort(make_response(jsonify({'message': 'Username already exists.'}), 409))
+                return make_response(jsonify({'message': 'Username already exists.'}), 409)
             # Checks if email is valid
             if not validation.valid_email(email):
-                abort(make_response(jsonify( {'message': "Enter a valid email"}), 400))
-
+                return make_response(jsonify( {'message': "Enter a valid email"}), 400)
             check_email = validation.check_email(email)
             if check_email:
-                abort(make_response(jsonify({'message': 'Email already exist'}), 409)) 
+                return make_response(jsonify({'message': 'Email already exist'}), 409)
             if not validation.valid_password(password):
                 return {'message': "confirm your password"}, 400
-
             if confirm_password != password:
                 return {"message": "Invalid Password.Check your passwords please"}, 400
-
             user_data = self.model.sign_up_user(
                 firstname, lastname, email, password, confirm_password)
             for userdata in user_data:
