@@ -38,14 +38,14 @@ class CreateMeetup(Resource):
 
             if data['topic'] == "":
                 abort(make_response(
-                    {"message": "%s cant be empty. Input data" % ("Topic")}, 400))
+                    {"message": "Topic cant be empty. Input data"}, 400))
             if data['location'] == "":
                 abort(make_response(
-                    {"message": "Please input location of the meet up"}, 400))
+                    {"message": "Input location of the meet up"}, 400))
 
             meetupid_validity = meetup_validation.validate_meetup_exist(topic)
             if meetupid_validity:
-                abort(make_response({"message": "Meetup exist already"}, 409))
+                abort(make_response({"message": "Meetup already exist"}, 409))
 
             create_meetup = self.model.create_meetup(
                 topic, public_id, data_id, location, date, tag)
@@ -62,7 +62,6 @@ class CreateMeetup(Resource):
                     "user data": response}, 201
         except TypeError:
             return make_response(jsonify({"status": 409, "error": "Meetup Exist already"}), 409)
-
 
 class UpcomingMeetup(Resource):
     '''user get upcomng meetup'''
@@ -93,7 +92,7 @@ class SpecificMeetup(Resource):
         try:
             verify_id = meetup_validation.validate_meetup_id(int(id))
             if not verify_id:
-                return {"message": "Id not found"}, 404
+                return {"message": "Meetup not found"}, 404
             specific_meetup = self.meetup.get_specific_meeetup(int(id))
             return make_response(jsonify({"message": specific_meetup}), 200)
 
@@ -121,9 +120,9 @@ class MeetupRsvp(Resource):
             if data['topic'] == "":
                 return {"message": "%s cant be empty. Input data" % ("Topic")}, 400
             if data['status'] == "":
-                return {"message": "Please input yes to rsvp and no to reject rsvp"}, 400
+                return {"message": "Please Input yes to rsvp and no to reject rsvp"}, 400
             if data['name'] == "":
-                return {"message": "Username can`t be empty. Input data"}, 400
+                return {"message": "Username can`t be empty. Input username"}, 400
 
             verify_id = meetup_validation.validate_meetup_id(int(id))
             if not verify_id:
