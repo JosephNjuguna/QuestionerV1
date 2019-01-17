@@ -4,7 +4,6 @@ import json
 import unittest
 # local imports
 from app import app
-
 class MeetupTest(unittest.TestCase):
     def setUp(self):
         self.appliaction = app
