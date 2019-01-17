@@ -20,6 +20,6 @@ api.add_resource(DownvoteQuestion, '/meetup/<string:id>/question/<string:questio
 api.add_resource(PostQuestion, '/meetup/<string:q_id>/question', '/meetup/<string:q_id>/question/',
                  '/meetup/<string:q_id>/question/', '/meetup/<string:q_id>/question/')
 api.add_resource(GetSpecificQuestion,
-                 '/meetup/<string:id>/question/<string:quizid>')
+                 '/meetup/<string:id>/question/<string:quiz_id>')
 api.add_resource(Signup, '/auth/signup', '/auth/signup/')
 api.add_resource(Login, '/auth/login', '/auth/login/')
