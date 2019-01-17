@@ -4,7 +4,8 @@
 **Badges**
 ---
 [![Build Status](https://travis-ci.org/JosephNjuguna/Questioner.svg?branch=develop)](https://travis-ci.org/JosephNjuguna/Questioner)
-[![Coverage Status](https://coveralls.io/repos/github/JosephNjuguna/Questioner/badge.svg?branch=develop)](https://coveralls.io/github/JosephNjuguna/Questioner?branch=develop)
+[![Coverage Status](https://coveralls.io/repos/github/JosephNjuguna/Questioner/badge.svg)](https://coveralls.io/github/JosephNjuguna/Questioner)
+[![Maintainability](https://api.codeclimate.com/v1/badges/014f3891087e4424bc08/maintainability)](https://codeclimate.com/github/JosephNjuguna/Questioner/maintainability)
 ## Getting started
 ---
 This is a Crowd-source questions for a meetup. Questioner helps the meetup organizer prioritize
