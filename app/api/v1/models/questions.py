@@ -1,3 +1,4 @@
+from app.api.v1.models.users import users_list
 questions_list = []
 
 class QuestionClass():
@@ -39,11 +40,14 @@ class QuestionClass():
     def downvote_question(self, id):
         """ a user should be able to downvote a question"""
         payload = [payload for payload in self.data if payload['id'] == id]
-
         if not payload:
             return False
-
-        downvote_votes = self.data[0]["votes"] + 1
+        for user in users_list:
+            if id == user[0]["id"]:
+                return "voted"
+        downvote_votes = self.data[0]["votes"] - 1
+        if downvote_votes == 0:
+            return False
         self.data[0]["votes"] = downvote_votes
 
-        return "Upvote successful"
+        return "Downvote successful"
