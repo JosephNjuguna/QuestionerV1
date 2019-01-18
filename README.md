@@ -19,7 +19,7 @@ https://josephnjuguna.github.io/Questioner/UI/templates/
 
 Get the Questioner API on : 
 
-https://thequestioner.herokuapp.com/
+https://questioner123.herokuapp.com/
 
 ## Prerequisites
 what you need for the app to run ??
