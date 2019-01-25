@@ -26,11 +26,6 @@ what you need for the app to run ??
 
 #### `postman`
 #### `terminal of your choice`
-## **Requirements**
-Visit `requirements.txt` install main dependencies on your machine 
-#### `pip install flask`
-#### `pip install pytest`
-#### `pip install virtualenv`
 
 **Installing**
 
@@ -44,27 +39,47 @@ git clone https://github.com/JosephNjuguna/Questioner.git
 ```
 cd Questioner
 ```
+
+4. Setting up Virtualenv
+   
+   ```bash
+    virtualenv venv
+
+   ```
+
+   Activation
+
+   ```bash
+    source venv/bin/activate
+   ```
+
+5. Installing dependencies
+
+    ```bash
+      pip install -r requirements.txt
+    ```
+
 **Running the App**
 
-4. then run the following command on the terminal to start the app 
+1. then run the following command on the terminal to start the app 
 
 ```
-flask run
+python run.py
 ```
 5. Open Postman app  and  navigate into following api endpoints:
 
-FEATURES     | API ENDPOINT 
------------- | -------------
-user sign up | [POST] /api/v1/auth/signup
-user log in   | [POST] /api/v1/auth/login
-user view upcoming meetups| [GET] /api/meetups/upcoming
-user view specific meetup details | [GET]   /api/v1/meetups/<meetup:id>/
-user post question | [POST] /api/v1/question
-user RSVP for a meetup| [POST] /api/v1/meetups/<meetup:id>/rsvps
-user get a specific question |[GET] /api/v1/meetup/<meetup:id>/questions/<meetup:id>
-admin post a question | [POST] /api/v1/meetups
-user upvote question | [PATCH]/questions/<question:id>/upvote
-user downvote question | [PATCH]/questions/<question:id>/downvote
+| FEATURES                          | API ENDPOINT                                           |
+| --------------------------------- | ------------------------------------------------------ |
+| user sign up                      | [POST] /api/v1/auth/signup                             |
+| user log in                       | [POST] /api/v1/auth/login                              |
+| user view upcoming meetups        | [GET] /api/meetups/upcoming                            |
+| user view specific meetup details | [GET]   /api/v1/meetups/<meetup:id>/                   |
+| user post question                | [POST] /api/v1/question                                |
+| user RSVP for a meetup            | [POST] /api/v1/meetups/<meetup:id>/rsvps               |
+| user get a specific question      | [GET] /api/v1/meetup/<meetup:id>/questions/<meetup:id> |
+| admin post a question             | [POST] /api/v1/meetups                                 |
+| user upvote question              | [PATCH]/questions/<question:id>/upvote                 |
+| user downvote question            | [PATCH]/questions/<question:id>/downvote               |
 
 
 
