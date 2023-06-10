@@ -20,15 +20,13 @@ class GetSpecificQuestion(Resource):
         """get details of specific meetup"""
         verify_id = meetup_validation.validate_meetup_id(int(id))
         if not verify_id:
-            abort(make_response({"message": "Meetup not found"}, 404))
+            return make_response(jsonify({"message": "Meetup not found"}), 404)
 
         verify_id = meetup_validation.validate_question_id(int(quiz_id))
         if not verify_id:
-            abort(make_response({"message": "Question not found"}, 400))
-
+            return make_response(jsonify({"message": "Question not found"}), 400)
         question_specific = self.model.get_one_question(int(quiz_id))
-        abort(make_response(jsonify({"message": question_specific}), 200))
-
+        return make_response(jsonify({"message": question_specific}), 200)
 
 class PostQuestion(Resource):
     def post(self, q_id):
@@ -46,21 +44,21 @@ class PostQuestion(Resource):
             question_id = len(questions_list)+1
 
             if data['user'] == "":
-                abort(make_response({"message": "Input Username please"}), 400)
+                return make_response(jsonify({"message": "Input Username please"}), 400)
             if data['meetup'] == "":
-                abort(make_response({"message": "Input Meetup name please"}), 400)
+                return make_response(jsonify({"message": "Input Meetup name please"}), 400)
             if data['title'] == "":
-                abort(make_response({"message": "Input Question Title  please"}), 400)
+                return make_response(jsonify({"message": "Input Question Title  please"}), 400)
             if data['body'] == "":
-                abort(make_response({"message": "Input your Question Please"}), 400)
+                return make_response(jsonify({"message": "Input your Question Please"}), 400)
             
             question_validity = meetup_validation.validate_question_exist(body)
             if question_validity:
-                abort(make_response({"message": "Question already exist ."}, 409))
+                return make_response(jsonify({"message": "Question already exist ."}, 409))
 
             verify_id = meetup_validation.validate_meetup_id(int(q_id))
             if not verify_id:
-                return {"message": "Meetup not found"}, 400
+                return jsonify({"message": "Meetup not found"}, 400)
             question_payload = questionmodel.post_question(
                 user, meetup, title, body, public_id, question_id, q_id)
             for q_data in question_payload:
@@ -102,7 +100,7 @@ class UpvoteQuestion(Resource):
             upvote = self.upvotemodel.upvote_question(int(questionid))
             return {"upvote success": upvote}, 204
         except KeyError:
-            abort(make_response(jsonify({"status": 500, "error": "Expecting a field key"})), 500)
+            return make_response(jsonify({"status": 500, "error": "Expecting a field key"}), 500)
 class DownvoteQuestion(Resource):
     """ a user should  be able to downvote a question"""
 
@@ -119,8 +117,8 @@ class DownvoteQuestion(Resource):
 
             verify_id = meetup_validation.validate_question_id(int(questionid))
             if not verify_id:
-                return {"message": "Question not found"}, 404
-            down_vote = self.downvotemodel.downvote_question(id=questionid)
-            abort(make_response(jsonify({"upvote success":down_vote}), 204))
+                return make_response(jsonify({"message": "Question not found"}), 404)
+            down_vote = self.downvotemodel.downvote_question(int(questionid))
+            return make_response(jsonify({"downvote success":down_vote}), 204)
         except:
-             make_response(jsonify({"status": 500, "error": "Expecting a field key"}), 500)
+             return make_response(jsonify({"status": 500, "error": "Expecting a field key"}), 500)
